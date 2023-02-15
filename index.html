@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page of community science museum">
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Community Science Museum | Home Page</title>
+    <title>CSM | Home Page</title>
 </head>
 <body>
     <header id="main-header">
@@ -17,11 +22,11 @@
             </label>
             <input id="hamburger" type="checkbox">
             <ul id="main-list">
-                <li>Home</li>
-                <li>Exhibitions</li>
-                <li>Events</li>
-                <li>Visit</li>
-                <li>Get Involved</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Exhibitions.html">Exhibitions</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Visit.html">Visit</a></li>
+                <li><a href="GetInvolved.html">Get Involved</a></li>
             </ul>
         </nav>
     </header>
@@ -29,27 +34,42 @@
         <div class="hero-img"></div>
         <section class="purple-background">
             <div class="teacher-wrapper">
-                <img src="#" alt="Teacher">
+                <img class="teacher" src="/images/option.png" alt="Teacher">
+                <h2>For teacher</h2>
+                <p>As a community-driven <br> museum, we want to work with<br> schools to create places of<br> learning and exploring.</p>
             </div>
             <div class="kids-wrapper">
-                <img src="#" alt="">
+                <img class="kids" src="/images/option2.png" alt="glass tubes with colorful liquid">
+                <h2>For kids</h2>
+                <p>Are you a young person looking<br> to learn more about science?<br> Come on down to our museum,<br> there’s plenty to see and do.</p>
             </div>
         </section>
-        <section class="content-wrapper">
+            <section class="content-wrapper">
+                <div class="first-slogan">
+                    <h2 id="front-text1">History and Science is</h2>
+                    <h1 id="front-text2">Exciting</h1>
+                </div>
             <div class="first-row">
-                <img src="#" alt="man looking into microscope">
                 <p>Over the course of human history, science has developed from our early understanding of 
                     fire, wind, water, and earth to exploring everything from galaxies far away to the 
                     very building blocks of life itself. The aim of our museum is to create a space where everyone can experience the wonders  of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
                     </p>
             </div>
+            </section>
+            <div class="skelekton"></div>
+            <section class="content-wrapper">
+                <div class="second-slogan">
+                    <h2 id="front-text1">Learn by</h2>
+                    <h1 id="front-text2">Observing</h1>
+                </div>
             <div class="second-row">
                 <p>We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. 
                     Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
-                <img src="#" alt="a child and a blackboard">
             </div>
-        </section>
-        <a class="explore-cta" href="#">Explore more</a>
+    </section>
+    <div class="explore-btn">
+        <a href="#">Explore more</a>
+    </div>
     </main>
     <footer class="footer-wrapper">
         <section class="footer-links">

@@ -1,3 +1,5 @@
+/*Universal properties*/
+
 * {
     padding: 0px;
     margin: 0px;
@@ -7,17 +9,28 @@
     font-family: 'Inter', sans-serif;
 }
 
-html, body {
+html, body, img, .purple-background {
     width: 100%;
 }
 
-img {
-    width: 100%;
+a {
+    color: white;
 }
+
 
 @media only screen and (max-width: 768px) {
+    /* Top section */
+    .hero-img {
+        background-image: url('/images/mavis-cw-1641281.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 35.5vh;
+    }
+    
     .logo {
         width: 79px;
+        margin-left: 20px;
     }
 
     #main-header {
@@ -33,7 +46,7 @@ img {
         font-family: 'Inter', sans-serif;
         position: absolute;
         right: 0px;
-        top: 50px;
+        top: 30px;
         background-color: #6B00FC;
         color: white;
         text-align: center;
@@ -48,6 +61,7 @@ img {
 
     #menu {
         font-size: 1.5em;
+        margin-right: 20px;
             
     }
 
@@ -58,4 +72,90 @@ img {
     #hamburger:checked + ul {
         display: block;
     }
+
+    .purple-background {
+        background-color: #6B00FC;
+        padding-top: 10px;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 11px;
+    }
+    .teacher-wrapper {
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .teacher {
+        width: 60px;
+        height: 60px;
+    }
+
+    .kids-wrapper {
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .kids {
+        width: 80px;
+        height: 60px; 
+    }
+
+    /* Mid section */
+
+    #front-text1 {
+        color: black;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 40px
+    }
+
+    #front-text2 {
+        color:#6B00FC;
+        font-size: 40px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .content-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    .first-slogan {
+        margin: 12px 0px;
+        text-align: left;
+    }
+
+
+    .first-row {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .skelekton {
+        background-image: url(images/samuel-zeller-113381.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50vh;
+    }
+
+    .second-slogan {
+        margin: 12px 0px;
+        text-align: right;
+    }
+    
+    .second-row {
+        margin-bottom: 20px;
+        text-align: right;
+    }
+
+    .explore-btn {
+        margin: auto;
+    }
 }
+
