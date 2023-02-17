@@ -17,14 +17,17 @@ a {
     color: white;
 }
 
+.hero-img, .skelekton, .cosmology, .evolution, .BiologyandMedicine, .RoboticsandAI, .event-background, .map {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 @media only screen and (max-width: 768px) {
     /* Top section */
     .hero-img {
         background-image: url('/images/mavis-cw-1641281.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         height: 35.5vh;
     }
     
@@ -40,6 +43,7 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: fixed;
     }
 
     #main-list {
@@ -138,9 +142,6 @@ a {
     
     .skelekton {
         background-image: url(images/samuel-zeller-113381.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         height: 50vh;
     }
 
@@ -155,7 +156,214 @@ a {
     }
 
     .explore-btn {
+        background-color: #6B00FC;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
         margin: auto;
+        text-align: center;
+        padding: 9px 0px;
+
+    }
+
+    .explore-btn a {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Exhibition page */
+
+    .title-space {
+        margin: 20px auto 0px auto;
+    }
+
+    .p-space {
+        margin: 10px auto 0px auto;
+    }
+
+    .title-space, .p-space {
+        width: 90%;
+    }
+
+    .cosmology {
+        background-image: url(images/celso-405219.jpg);
+        height: 25vh;
+    }
+
+    .evolution {
+        background-image: url(images/mammoth-1257288_1920.jpg);
+        height: 35vh;
+        margin-top: 40px;
+    }
+
+    .BiologyandMedicine {
+        background-image: url(images/heart-2607178_1920.jpg);
+        height: 35vh;
+        margin-top: 40px;
+    }
+
+    .RoboticsandAI {
+        background-image: url(images/samuel-zeller-158996.jpg);
+        height: 50vh;
+        margin-top: 40px;
+    }
+
+    /* Event page */
+
+    .event-background {
+        background-image: url(images/exhibition-1863344_1920.jpg);
+        height: 35vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .slogan-event {
+        color: white;
+        margin: auto 0px;
+    }
+
+    .slogan-event h1 {
+        font-size: 1.4rem;
+    }
+
+    .slogan-event p {
+        font-size: 0.7rem;
+    }
+
+    /* Universal for event page */
+
+    .first-block, .second-block, .third-block {
+        padding: 20px 0px;
+    }
+
+    .first-wrapper, .second-wrapper, .third-wrapper{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
+        font-size: 17px;
+    }
+
+    .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
+        font-size: 13px;
+    }
+
+    .sheila, .night {
+        margin-left: 10px;
+    }
+
+    /* Beginning of 1st section */
+
+    .first-block {
+        background-color: #FFBF00;
+    }
+    
+    .sheila {
+        border-radius: 50%;
+        width: 40%;
+    }
+
+    /* End of 1st section */
+    /* Beginning of 2nd section */
+
+    .energetica {
+        margin-left: 10px;
+    }
+    
+    .energetica {
+        border-radius: 10px;
+        width: 100%;
+        margin-right: 30px;
+    }
+
+    .energetica-wrapper {
+        text-align: right;
+        padding-left: 20px;
+    }
+
+    /*End of 2nd section */
+    /* Beginning of 3rd section */
+
+    .third-block {
+        background-color: #038DF1;
+    }
+
+    .night {
+        border-radius: 10px;
+        width: 30%;
+    }
+
+    /* Visit page */
+
+    .map {
+        background-image: url(images/GPS_map_generated.jpg);
+        height: 55vh;
+    }
+
+    .map-banner {
+        background-color: #6B00FC;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+
+    .map-banner h2 {
+        margin: auto 0px;
+        color: white;
+    }
+
+    /* Footer */
+
+    .contact-wrapper {
+        width: 54%;
+        color: white;
+    }
+
+    .icons {
+        width: 36%;
+        display: flex;
+        justify-content: space-around
+    }
+
+    .contact-wrapper h2 {
+        font-size: 32px;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .line {
+        border: 1px solid white;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .footer-wrapper, .footer-wrapper1 {
+        background-color: #6B00FC;
+        margin-top: 40px;
+        padding-top: 17px;
+    }
+
+    .footer-wrapper1 {
+        margin-top: 0px;
+    }
+    
+
+    .footer-row1, .footer-row2, .contact-wrapper, .icons{
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+
+    .footer-row2 {
+        margin-top: 17px;
+    }
+
+    .csm {
+        text-align: center;
+        color: white;
+        margin-top: 20px;
     }
 }
-
