@@ -23,13 +23,65 @@ a {
     background-position: center;
 }
 
+.hero-img {
+    background-image: url('/images/mavis-cw-1641281.jpg');
+    height: 35.5vh;
+}
 
-@media only screen and (max-width: 768px) {
+.contact-wrapper {
+    width: 54%;
+    color: white;
+}
+
+.icons {
+    width: 36%;
+    display: flex;
+    justify-content: space-around
+}
+
+.contact-wrapper h2 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.line {
+    border: 1px solid white;
+    margin: 0px 0px 20px 0px;
+}
+
+.footer-wrapper, .footer-wrapper1 {
+    background-color: #6B00FC;
+    margin-top: 40px;
+    padding-top: 17px;
+}
+
+.footer-wrapper1 {
+    margin-top: 0px;
+}
+
+
+.footer-row1, .footer-row2, .contact-wrapper, .icons{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer-row2 {
+    margin-top: 17px;
+}
+
+.csm {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 48em) {
     /* Top section */
-    .hero-img {
-        background-image: url('/images/mavis-cw-1641281.jpg');
-        height: 35.5vh;
-    }
     
     .logo {
         width: 79px;
@@ -263,7 +315,7 @@ a {
     
     .sheila {
         border-radius: 50%;
-        width: 40%;
+        width: 20%;
     }
 
     /* End of 1st section */
@@ -322,6 +374,11 @@ a {
         margin: auto;
     }
 
+    .getinvolved-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
     .location-wrapper, .admission-text, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .support-text  {
         margin-bottom: 30px;
     }
@@ -348,52 +405,451 @@ a {
 
     /* Footer */
 
-    .contact-wrapper {
-        width: 54%;
+}
+
+
+@media only screen and (min-width: 48.0625em) and (max-width: 64em) {
+
+    .hero-img {
+        width: 90%;
+        margin: auto;
+        background-image: url('/images/mavis-cw-1641281.jpg');
+        object-fit: cover;
+        height: 45vh;
+    }
+    
+    .logo {
+        width: 79px;
+        margin-left: 52px;
+        
+    }
+
+    #main-header {
+        background-color: #6B00FC;
+        width: 100%;
+        height: 51px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+    }
+
+    #hamburger, #menu {
+        display: none;
+    }
+
+    ul {
+        margin-right: 42px;
+    }
+
+    li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .purple-background {
+        width: 90%;
+        margin: auto;
+        background-color: #6B00FC;
+        padding-top: 10px;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 11px;
+    }
+    .teacher-wrapper {
+        align-items: center;
+        text-align: center;
         color: white;
     }
 
-    .icons {
-        width: 36%;
-        display: flex;
-        justify-content: space-around
+    .teacher {
+        width: 80px;
+        height: 80px;
     }
 
-    .contact-wrapper h2 {
-        font-size: 32px;
-        font-weight: 500;
-        font-family: 'Inter', sans-serif;
+    .kids-wrapper {
+        align-items: center;
+        text-align: center;
+        color: white;
     }
 
-    .line {
-        border: 1px solid white;
-        margin: 0px 0px 20px 0px;
+    .kids-wrapper h2 {
+        margin-top: 20px;
     }
 
-    .footer-wrapper, .footer-wrapper1 {
-        background-color: #6B00FC;
-        margin-top: 40px;
-        padding-top: 17px;
+    .kids {
+        width: 110px;
+        height: 65px; 
     }
 
-    .footer-wrapper1 {
-        margin-top: 0px;
+    /* Mid section */
+
+    #front-text1 {
+        color: black;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 40px
+    }
+
+    #front-text2 {
+        color:#6B00FC;
+        font-size: 40px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .content-wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .first-slogan {
+        margin: 12px 0px;
+        text-align: left;
+    }
+
+
+    .first-row {
+        margin-bottom: 20px;
+        text-align: left;
     }
     
+    .skelekton {
+        background-image: url(images/samuel-zeller-113381.jpg);
+        height: 55vh;
+    }
 
-    .footer-row1, .footer-row2, .contact-wrapper, .icons{
+    .second-slogan {
+        margin: 12px 0px;
+        text-align: right;
+    }
+    
+    .second-row {
+        margin-bottom: 20px;
+        text-align: right;
+    }
+
+    .explore-btn {
+        background-color: #6B00FC;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        margin: auto;
+        text-align: center;
+        padding: 9px 0px;
+
+    }
+
+    .explore-btn a {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Exhibition page */
+
+    .cosmology {
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .container-text {
+    }
+
+    .cosmology1 {
+        height: 100px;
+        width: 200px;
+
+    }
+
+    /* Event page */
+
+    .event-background {
+        background-image: url(images/exhibition-1863344_1920.jpg);
+        height: 35vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .slogan-event {
+        color: white;
+        margin: auto 0px;
+    }
+
+    .slogan-event h1 {
+        font-size: 1.7rem;
+    }
+
+    .slogan-event p {
+        font-size: .9rem;
+    }
+
+    /* Universal for event page */
+
+    .first-block, .second-block, .third-block {
+        padding: 20px 0px;
+    }
+
+    .first-wrapper, .second-wrapper, .third-wrapper{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
+        font-size: 22px;
+    }
+
+    .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
+        font-size: 20px;
+    }
+
+    .sheila, .night {
+        margin-left: 10px;
+    }
+
+    /* Beginning of 1st section */
+
+    .first-block {
+        background-color: #FFBF00;
+    }
+    
+    .sheila {
+        border-radius: 50%;
+        max-width: 30%;
+    }
+
+    /* End of 1st section */
+    /* Beginning of 2nd section */
+
+    .energetica {
+        margin-left: 10px;
+    }
+    
+    .energetica {
+        border-radius: 10px;
+        width: 33vh;
+        margin-right: 30px;
+    }
+
+    .energetica-wrapper {
+        text-align: right;
+        padding-left: 20px;
+    }
+
+    /*End of 2nd section */
+    /* Beginning of 3rd section */
+
+    .third-block {
+        background-color: #038DF1;
+    }
+
+    .night {
+        border-radius: 10px;
+        width: 16.063rem;
+        height: 23.25rem;
+    }
+
+    /* Visit page */
+
+    .map {
+        background-image: url(images/GPS_map_generated.jpg);
+        height: 60vh;
+        background-position: center -10px;
+    }
+
+    .map-banner {
+        background-color: #6B00FC;
+        height: 100px;
         display: flex;
         justify-content: space-around;
         color: white;
     }
 
-    .footer-row2 {
-        margin-top: 17px;
+    .map-banner h2 {
+        margin: auto 0px;
+        color: white;
     }
 
-    .csm {
+    .visit-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    .getinvolved-wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .location-wrapper, .admission-text, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .support-text  {
+        margin-bottom: 30px;
+    }
+
+    .location-wrapper, .support-wrapper, .interships-wrapper {
+        margin-top: 20px;
+
+    }
+
+    .admission-text {
+        padding-top: 10px;
+    }
+
+    /* Get involved page */
+    
+    .getinvolved-img {
+        background-image: url('images/william-bout-264826.jpg');
+        height: 50vh;
+    }
+
+    .support-text, .volunteer-text {
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 64em) and (max-width: 90em) {
+
+    .hero-img {
+        width: 90%;
+        margin: auto;
+        background-image: url('/images/mavis-cw-1641281.jpg');
+        height: 55vh;
+    }
+    
+    .logo {
+        width: 79px;
+        margin-left: 74px;
+        
+    }
+
+    #main-header {
+        background-color: #6B00FC;
+        width: 100%;
+        height: 51px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+    }
+
+    #hamburger, #menu {
+        display: none;
+    }
+
+    ul {
+        margin-right: 65px;
+    }
+
+    li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .purple-background {
+        width: 90%;
+        margin: auto;
+        background-color: #6B00FC;
+        padding-top: 10px;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 11px;
+    }
+    .teacher-wrapper {
+        align-items: center;
         text-align: center;
         color: white;
+    }
+
+    .teacher {
+        width: 100px;
+        height: 100px;
+    }
+
+    .kids-wrapper {
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .kids-wrapper h2 {
         margin-top: 20px;
     }
+
+    .kids {
+        width: 110px;
+        height: 65px; 
+    }
+
+    /* Mid section */
+
+    #front-text1 {
+        color: black;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 40px
+    }
+
+    #front-text2 {
+        color:#6B00FC;
+        font-size: 40px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .content-wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .first-slogan {
+        margin: 12px 0px;
+        text-align: left;
+    }
+
+
+    .first-row {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .skelekton {
+        background-image: url(images/samuel-zeller-113381.jpg);
+        height: 55vh;
+    }
+
+    .second-slogan {
+        margin: 12px 0px;
+        text-align: right;
+    }
+    
+    .second-row {
+        margin-bottom: 20px;
+        text-align: right;
+    }
+
+    .explore-btn {
+        background-color: #6B00FC;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        margin: auto;
+        text-align: center;
+        padding: 9px 0px;
+
+    }
+
+    .explore-btn a {
+        font-family: 'Montserrat', sans-serif;
+    }
+
 }
