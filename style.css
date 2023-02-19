@@ -80,7 +80,7 @@ a {
 
 
 
-@media only screen and (max-width: 48em) {
+@media only screen and (min-width: 48em) {
     /* Top section */
     
     .logo {
@@ -408,7 +408,7 @@ a {
 }
 
 
-@media only screen and (min-width: 48.0625em) and (max-width: 64em) {
+@media only screen and (min-width: 64em) {
 
     .hero-img {
         width: 90%;
@@ -715,7 +715,7 @@ a {
 
 }
 
-@media only screen and (min-width: 65em) and (max-width: 900em) {
+@media only screen and (min-width: 90em) {
 
     .hero-img {
         width: 90%;
