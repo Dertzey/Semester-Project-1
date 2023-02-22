@@ -9,6 +9,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    padding-top: 70px;
+}
+
 html, body, img, .purple-background {
     width: 100%;
 }
@@ -33,48 +37,10 @@ a {
     color: white;
 }
 
-.icons {
-    width: 36%;
-    display: flex;
-    justify-content: space-around
-}
-
 .contact-wrapper h2 {
     font-size: 32px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
-}
-
-.line {
-    border: 1px solid white;
-    margin: 0px 0px 20px 0px;
-}
-
-.footer-wrapper, .footer-wrapper1 {
-    background-color: #6B00FC;
-    margin-top: 40px;
-    padding-top: 17px;
-}
-
-.footer-wrapper1 {
-    margin-top: 0px;
-}
-
-
-.footer-row1, .footer-row2, .contact-wrapper, .icons{
-    display: flex;
-    justify-content: space-around;
-    color: white;
-}
-
-.footer-row2 {
-    margin-top: 17px;
-}
-
-.csm {
-    text-align: center;
-    color: white;
-    margin-top: 20px;
 }
 
 
@@ -177,13 +143,8 @@ a {
     }
 
     .content-wrapper {
-        width: 80%;
+        width: 8;
         margin: auto;
-    }
-
-    .first-slogan {
-        margin: 12px 0px;
-        text-align: left;
     }
 
 
@@ -288,7 +249,7 @@ a {
     }
 
     .first-wrapper, .second-wrapper, .third-wrapper{
-        width: 80%;
+        width: 70%;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -408,14 +369,37 @@ a {
 }
 
 
-@media only screen and (min-width: 48.0625em) and (max-width: 64em) {
+@media only screen and (min-width: 48em) and (max-width: 64em) {
 
     .hero-img {
-        width: 90%;
-        margin: auto;
+        width: 100%;
         background-image: url('/images/mavis-cw-1641281.jpg');
         object-fit: cover;
         height: 45vh;
+        display: flex;
+    }
+
+    .science-title h1 {
+        font-size: 1.875rem;
+    }
+
+    .science-title, .explore-btn {
+        color: white;
+        margin: auto;
+    }
+    .explore-btn {
+        background-color: #6B00FC;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 9px 0px;
+        margin-top: 70px;
+
+    }
+
+    .explore-btn a {
+        font-family: 'Montserrat', sans-serif;
     }
     
     .logo {
@@ -447,17 +431,54 @@ a {
         padding: 10px;
     }
 
+    .first-row, .second-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+    .man-microscope {
+        height: 260px;
+        width: 380px;
+        padding-left: 20px;
+    }
+
     .purple-background {
-        width: 90%;
+        width: 100%;
         margin: auto;
         background-color: #6B00FC;
         padding-top: 10px;
-        height: 200px;
+        height: 230px;
         display: flex;
         justify-content: space-around;
-        font-size: 11px;
+        font-size: .8rem;
     }
-    .teacher-wrapper {
+
+    .purple-background-ext{
+        width: 100%;
+        height: 70px;
+        background-color: #6B00FC;
+    }
+
+    .more-info-btn {
+        background-color: #FFBF00;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 9px 0px;
+        margin: auto;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .more-info-btn a {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .teacher-wrapper, .kids-wrapper, .researcher-wrapper {
         align-items: center;
         text-align: center;
         color: white;
@@ -468,14 +489,12 @@ a {
         height: 80px;
     }
 
-    .kids-wrapper {
-        align-items: center;
-        text-align: center;
-        color: white;
+    .kids-wrapper h2 {
+        margin-top: 16px;
     }
 
-    .kids-wrapper h2 {
-        margin-top: 20px;
+    .researcher-wrapper h2 {
+        margin-top: 0px;
     }
 
     .kids {
@@ -483,31 +502,39 @@ a {
         height: 65px; 
     }
 
+    .researcher {
+        width: 80px;
+        height: 80px;
+    }
+
+    .genoa {
+        height: 260px;
+        width: 380px;
+        padding-right: 20px;
+    }
+
     /* Mid section */
 
     #front-text1 {
         color: black;
-        font-weight: 600;
-        font-size: 20px;
+        font-weight: 500;
+        font-size: 2.5rem;
         font-family: 'Montserrat', sans-serif;
-        margin-top: 40px
+        margin-top: 10px
     }
 
     #front-text2 {
         color:#6B00FC;
-        font-size: 40px;
+        font-size: 2.813rem;
         font-weight: 600;
         font-family: 'Montserrat', sans-serif;
     }
 
+
+
     .content-wrapper {
         width: 90%;
         margin: auto;
-    }
-
-    .first-slogan {
-        margin: 12px 0px;
-        text-align: left;
     }
 
 
@@ -516,10 +543,6 @@ a {
         text-align: left;
     }
     
-    .skelekton {
-        background-image: url(images/samuel-zeller-113381.jpg);
-        height: 55vh;
-    }
 
     .second-slogan {
         margin: 12px 0px;
@@ -529,21 +552,6 @@ a {
     .second-row {
         margin-bottom: 20px;
         text-align: right;
-    }
-
-    .explore-btn {
-        background-color: #6B00FC;
-        width: 200px;
-        height: 40px;
-        border-radius: 20px;
-        margin: auto;
-        text-align: center;
-        padding: 9px 0px;
-
-    }
-
-    .explore-btn a {
-        font-family: 'Montserrat', sans-serif;
     }
 
     /* Exhibition page */
@@ -557,9 +565,6 @@ a {
         margin: auto;
         display: flex;
         align-items: center;
-    }
-
-    .container-text {
     }
 
     .cosmology1 {
@@ -680,7 +685,7 @@ a {
     }
 
     .visit-content {
-        width: 90%;
+        width: 70%;
         margin: auto;
     }
 
@@ -715,29 +720,12 @@ a {
 
 }
 
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 64em) {
 
-    .hero-img {
-        width: 90%;
-        margin: auto;
-        background-image: url('/images/mavis-cw-1641281.jpg');
-        height: 55vh;
-    }
-    
     .logo {
-        width: 79px;
-        margin-left: 74px;
+        width: 110px;
+        float: left;
         
-    }
-
-    #main-header {
-        background-color: #6B00FC;
-        width: 100%;
-        height: 51px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
     }
 
     #hamburger, #menu {
@@ -745,43 +733,173 @@ a {
     }
 
     ul {
-        margin-right: 65px;
+        float: right;
     }
 
     li {
         display: inline-block;
         padding: 10px;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    #main-header {
+        background-color: #6B00FC;
+        margin: auto;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        z-index: 999;
+        top: 0;
+    }
+
+    .nav-bar {
+        width: 70%;
+        margin: auto;
+    }
+
+
+    .hero-img {
+        width: 70%;
+        background-image: url('/images/mavis-cw-1641281.jpg');
+        object-fit: cover;
+        height: 55vh;
+        display: flex;
+        margin: auto;
+    }
+
+
+    .content-wrapper {
+        width: 60%;
+        margin: auto;
+    }
+
+    .front-text1 {
+        color: black;
+        font-weight: 600;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .exciting, .observing {
+        color:#6B00FC;
+    }
+    
+
+    .first-section {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0px;
+        align-items: center;
+    }
+
+    .man-microscope {
+        border-radius: 10%;
+        height: 280px;
+        width: 380px;
+        padding-left: 20px;
     }
 
     .purple-background {
-        width: 90%;
         margin: auto;
+        border-radius: 30px;
         background-color: #6B00FC;
-        padding-top: 10px;
-        height: 200px;
+        height: 280px;
         display: flex;
         justify-content: space-around;
-        font-size: 11px;
-    }
-    .teacher-wrapper {
+        align-items: center;
         align-items: center;
         text-align: center;
         color: white;
     }
+
+    .purple-background p {
+        font-size: 14px;
+    }
+
+    .purple-background h2 {
+        font-size: 23px;
+    }
+
+
+    .second-section {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0px;
+        align-items: center;
+    }
+
+    .genoa {
+        border-radius: 10%;
+        height: 280px;
+        width:  380px;
+        padding-right: 20px;
+    }
+
+    .text-area1 p, .text-area2 p {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .text-area2 {
+        text-align: right;
+    }
+
+    .science-title h1 {
+        font-size: 2.875rem;
+    }
+
+    .science-title, .explore-btn {
+        color: white;
+        margin: auto;
+    }
+    .explore-btn {
+        background-color: #FFBF00;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 9px 0px;
+        margin-top: 70px;
+        cursor: pointer;
+        font-weight: 600;
+
+    }
+
+    .explore-btn a {
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+    }
+
+
+    .more-info-btn {
+        background-color: #FFBF00;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 9px 0px;
+        margin: auto;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .more-info-btn a {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
 
     .teacher {
-        width: 100px;
-        height: 100px;
-    }
-
-    .kids-wrapper {
-        align-items: center;
-        text-align: center;
-        color: white;
+        width: 80px;
+        height: 80px;
     }
 
     .kids-wrapper h2 {
-        margin-top: 20px;
+        margin-top: 16px;
     }
 
     .kids {
@@ -789,67 +907,230 @@ a {
         height: 65px; 
     }
 
-    /* Mid section */
+    .researcher {
+        width: 80px;
+        height: 80px;
+    }
 
-    #front-text1 {
-        color: black;
-        font-weight: 600;
+    /* Exhibition page */
+
+    .exhibition-wrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    .cosmology, .evolution, .biologyandmedicine, .ecology {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    .cosmology1 {
+        width: 398px;
+        height: 238px;
+    }
+
+    .evolution1 {
+        width: 400px;
+        height: 270px;
+    }
+
+    .biologyandmedicine1 {
+        width: 400px;
+        height: 270px;
+    }
+
+    .ecology1 {
+        width: 400px;
+        height: 320px;
+    }
+
+    .cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
+        font-size: 18px;
+        padding-right: 30px;
+    }
+
+    .cosmology-text h2, .evolution-text h2, .biologyandmedicine-text h2, .ecology-text h2 {
+        font-size: 30px;
+    }
+
+    /* Universal for event page */
+
+    .event-wrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    .first-block, .second-block, .third-block {
+        padding: 20px 0px;
+    }
+
+    .first-wrapper, .second-wrapper, .third-wrapper{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
+        font-size: 18px;
+    }
+
+    .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
         font-size: 20px;
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 40px
     }
 
-    #front-text2 {
-        color:#6B00FC;
+    .sheila, .night {
+        margin-left: 10px;
+    }
+
+    /* Beginning of 1st section */
+
+    .first-block {
+        background-color: #FFBF00;
+    }
+    
+    .sheila {
+        border-radius: 50%;
+        max-width: 250px;
+    }
+
+    /* End of 1st section */
+    /* Beginning of 2nd section */
+
+    .energetica {
+        margin-left: 10px;
+    }
+    
+    .energetica {
+        border-radius: 10px;
+        width: 33vh;
+        margin-right: 30px;
+    }
+
+    .energetica-wrapper {
+        text-align: right;
+        padding-left: 20px;
+    }
+
+    /*End of 2nd section */
+    /* Beginning of 3rd section */
+
+    .third-block {
+        background-color: #038DF1;
+    }
+
+    .night {
+        border-radius: 10px;
+        width: 33vh;
+    }
+
+    .event-background {
+        background-image: url(images/exhibition-1863344_1920.jpg);
+        height: 35vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .slogan-event {
+        color: white;
+        margin: auto 0px;
+    }
+
+    .slogan-event h1 {
         font-size: 40px;
-        font-weight: 600;
-        font-family: 'Montserrat', sans-serif;
     }
 
-    .content-wrapper {
-        width: 90%;
-        margin: auto;
+    .slogan-event p {
+        font-size: 20px;
     }
 
-    .first-slogan {
-        margin: 12px 0px;
-        text-align: left;
-    }
+    /* Visit page */
 
-
-    .first-row {
-        margin-bottom: 20px;
-        text-align: left;
-    }
-    
-    .skelekton {
-        background-image: url(images/samuel-zeller-113381.jpg);
-        height: 55vh;
-    }
-
-    .second-slogan {
-        margin: 12px 0px;
-        text-align: right;
-    }
-    
-    .second-row {
-        margin-bottom: 20px;
-        text-align: right;
-    }
-
-    .explore-btn {
+    .map-banner {
         background-color: #6B00FC;
-        width: 200px;
-        height: 40px;
-        border-radius: 20px;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+
+    .map-title {
         margin: auto;
+    }
+
+
+    .map {
+        background-image: url(images/michael-van-kerckhove-iN3xWBNHmnw-unsplash.jpg);
+        height: 400px;
+    }
+
+    .visit-page {
+        width: 70%;
+        margin: auto;
+    }
+
+     /* Get involved page */
+
+     .getinvolved-wrapper {
+        width: 70%;
+        margin: auto;
+     }
+    
+     .getinvolved-img {
+        background-image: url('images/william-bout-264826.jpg');
+        height: 50vh;
+    }
+
+    .support-text, .volunteer-text {
+        margin-top: 10px;
+    }
+
+    /* Footer */
+
+    .contact-wrapper {
+        margin: auto;
+        width: 60%;
+    }
+
+    .line {
+        width: 100%;
+        margin: auto;
+        border: 1px solid white;
+    }
+    
+    .footer-wrapper, .footer-wrapper1 {
+        background-color: #6B00FC;
+        margin-top: 40px;
+        padding-top: 17px;
+    }
+    
+    .footer-wrapper1 {
+        margin-top: 0px;
+    }
+    
+    
+    .footer-row{
+        width: 70%;
+        margin: auto;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .footer-row p {
+        font-size: 16px;
+        padding: 2px;
+    }
+
+    
+    .csm {
         text-align: center;
-        padding: 9px 0px;
-
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 20px;
     }
-
-    .explore-btn a {
-        font-family: 'Montserrat', sans-serif;
-    }
-
 }
