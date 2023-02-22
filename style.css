@@ -43,6 +43,10 @@ a {
     font-family: 'Inter', sans-serif;
 }
 
+.label {
+    display: none;
+}
+
 
 
 
