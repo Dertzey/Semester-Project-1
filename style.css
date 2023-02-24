@@ -9,10 +9,6 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
-    padding-top: 70px;
-}
-
 html, body, img, .purple-background {
     width: 100%;
 }
@@ -27,10 +23,6 @@ a {
     background-position: center;
 }
 
-.hero-img {
-    background-image: url('/images/mavis-cw-1641281.jpg');
-    height: 35.5vh;
-}
 
 .contact-wrapper {
     width: 54%;
@@ -48,14 +40,23 @@ a {
 }
 
 
-
-
 @media only screen and (max-width: 48em) {
     /* Top section */
+
+    body {
+        padding-top: 50px;
+    }
     
     .logo {
         width: 79px;
         margin-left: 20px;
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #main-header {
@@ -66,6 +67,8 @@ a {
         justify-content: space-between;
         align-items: center;
         position: fixed;
+        z-index: 999;
+        top: 0;
     }
 
     #main-list {
@@ -87,8 +90,7 @@ a {
 
     #menu {
         font-size: 1.5em;
-        margin-right: 20px;
-            
+        margin-right: 20px;    
     }
 
     ul, #hamburger {
@@ -99,129 +101,165 @@ a {
         display: block;
     }
 
-    .purple-background {
-        background-color: #6B00FC;
-        padding-top: 10px;
-        height: 180px;
+    .hero-img {
+        background-image: url('/images/mavis-cw-1641281.jpg');
+        object-fit: cover;
+        height: 55vh;
         display: flex;
-        justify-content: space-around;
-        font-size: 11px;
-    }
-    .teacher-wrapper {
-        align-items: center;
-        text-align: center;
-        color: white;
-    }
-
-    .teacher {
-        width: 60px;
-        height: 60px;
-    }
-
-    .kids-wrapper {
-        align-items: center;
-        text-align: center;
-        color: white;
-    }
-
-    .kids {
-        width: 80px;
-        height: 60px; 
-    }
-
-    /* Mid section */
-
-    #front-text1 {
-        color: black;
-        font-weight: 600;
-        font-size: 20px;
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 40px
-    }
-
-    #front-text2 {
-        color:#6B00FC;
-        font-size: 40px;
-        font-weight: 600;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .content-wrapper {
-        width: 8;
         margin: auto;
     }
 
-
-    .first-row {
-        margin-bottom: 20px;
-        text-align: left;
-    }
-    
-    .skelekton {
-        background-image: url(images/samuel-zeller-113381.jpg);
-        height: 50vh;
-    }
-
-    .second-slogan {
-        margin: 12px 0px;
-        text-align: right;
-    }
-    
-    .second-row {
-        margin-bottom: 20px;
-        text-align: right;
+    .science-title h1 {
+        font-size: 25px;
+        margin-bottom: 70px;
     }
 
     .explore-btn {
-        background-color: #6B00FC;
-        width: 200px;
+        background-color: #FFBF00;
+        width: 150px;
         height: 40px;
         border-radius: 20px;
-        margin: auto;
         text-align: center;
         padding: 9px 0px;
+        cursor: pointer;
+        font-weight: 600;
 
     }
 
     .explore-btn a {
         font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        color: black;
     }
 
-    /* Exhibition page */
+    .science-title, .explore-btn {
+        color: white;
+        margin: auto;
 
-    .title-space {
-        margin: 20px auto 0px auto;
     }
 
-    .p-space {
-        margin: 10px auto 0px auto;
-    }
 
-    .title-space, .p-space {
+    .content-wrapper {
         width: 90%;
+        margin: auto;
     }
 
-    .cosmology {
-        background-image: url(images/celso-405219.jpg);
-        height: 25vh;
+    .front-text1 {
+        color: black;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
     }
 
-    .evolution {
-        background-image: url(images/mammoth-1257288_1920.jpg);
-        height: 35vh;
-        margin-top: 40px;
+    .text-area1 p, .text-area2 p {
+        font-size: 16px;
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .BiologyandMedicine {
-        background-image: url(images/heart-2607178_1920.jpg);
-        height: 35vh;
-        margin-top: 40px;
+    .exciting, .observing {
+        color:#6B00FC;
+    }
+    
+
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0px;
+        align-items: center;
     }
 
-    .RoboticsandAI {
-        background-image: url(images/samuel-zeller-158996.jpg);
-        height: 50vh;
-        margin-top: 40px;
+    .man-microscope {
+        border-radius: 10%;
+        height: 180px;
+        width: 280px;
+        padding-left: 20px;
+    }
+
+    .purple-background {
+        margin: auto;
+        background-color: #6B00FC;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .purple-background p {
+        font-size: 10px;
+    }
+
+    .purple-background h2 {
+        font-size: 12px;
+    }
+
+    .teacher {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .kids {
+        width: 55px;
+        height: 32px; 
+    }
+
+    .researcher {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .second-section {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 40px 0px;
+        align-items: center;
+    }
+
+    .genoa {
+        border-radius: 10%;
+        height: 180px;
+        width: 280px;
+    }
+
+      /* Exhibition page */
+
+      .exhibition-wrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    .cosmology, .evolution, .biologyandmedicine, .ecology {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    .cosmology1, .evolution1, .biologyandmedicine1, .ecology1  {
+        width: 100%;
+    }
+
+    .cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
+        font-size: 16px;
+    }
+
+    .cosmology-text p, .evolution-text p, .biologyandmedicine-text p, .ecology-text p {
+        padding: 10px 0px;
+    }
+
+    .cosmology-text h2, .evolution-text h2, .biologyandmedicine-text h2, .ecology-text h2 {
+        font-size: 20px;
+        padding: 3px;
+        background-color: #6B00FC;
+        color: white;
     }
 
     /* Event page */
@@ -368,58 +406,67 @@ a {
         margin-top: 10px;
     }
 
-    /* Footer */
+        /* Footer */
+
+    .contact-wrapper {
+        margin: auto;
+        width: 60%;
+    }
+
+    .line {
+        width: 100%;
+        height: 40px;
+        background-color: #7711FF;
+    }
+    
+    .footer-wrapper, .footer-wrapper1 {
+        background-color: #6B00FC;
+    }
+    
+    .footer-wrapper1 {
+        margin-top: 0px;
+    }
+    
+    
+    .footer-row{
+        width: 100%;
+        margin: auto;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .footer-row h3 {
+        font-size: 14px;
+    }
+
+    .footer-row p {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    
+    .csm {
+        text-align: center;
+        color: white;
+        font-size: 12px;
+    }
 
 }
 
 
-@media only screen and (min-width: 48em) and (max-width: 64em) {
+@media only screen and (min-width: 48.0625em) and (max-width: 64em) {
 
-    .hero-img {
-        width: 100%;
-        background-image: url('/images/mavis-cw-1641281.jpg');
-        object-fit: cover;
-        height: 45vh;
-        display: flex;
+    body {
+        padding-top: 60px;
     }
 
-    .science-title h1 {
-        font-size: 1.875rem;
-    }
-
-    .science-title, .explore-btn {
-        color: white;
-        margin: auto;
-    }
-    .explore-btn {
-        background-color: #6B00FC;
-        width: 200px;
-        height: 40px;
-        border-radius: 20px;
-        text-align: center;
-        padding: 9px 0px;
-        margin-top: 70px;
-
-    }
-
-    .explore-btn a {
-        font-family: 'Montserrat', sans-serif;
-    }
-    
     .logo {
-        width: 79px;
-        margin-left: 52px;
+        width: 80px;
+        float: left;
         
-    }
-
-    #main-header {
-        background-color: #6B00FC;
-        width: 100%;
-        height: 51px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
     }
 
     #hamburger, #menu {
@@ -427,65 +474,147 @@ a {
     }
 
     ul {
-        margin-right: 42px;
+        float: right;
     }
 
     li {
         display: inline-block;
         padding: 10px;
+        font-size: 16px;
+        font-weight: 500;
     }
 
-    .first-row, .second-row {
+    #main-header {
+        background-color: #6B00FC;
+        margin: auto;
+        width: 100%;
+        height: 60px;
+        position: fixed;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        font-size: 20px;
+        z-index: 999;
+        top: 0;
+    }
+
+    .nav-bar {
+        width: 70%;
+        margin: auto;
+    }
+
+
+    .hero-img {
+        width: 70%;
+        background-image: url('/images/mavis-cw-1641281.jpg');
+        object-fit: cover;
+        height: 55vh;
+        display: flex;
+        margin: auto;
+    }
+
+    .science-title h1 {
+        font-size: 30px;
+        margin-bottom: 70px;
+    }
+
+    .explore-btn {
+        background-color: #FFBF00;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 9px 0px;
+        cursor: pointer;
+        font-weight: 600;
+
+    }
+
+    .explore-btn a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        color: black;
+    }
+
+    .science-title, .explore-btn {
+        color: white;
+        margin: auto;
+    }
+
+
+    .content-wrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    .front-text1 {
+        color: black;
+        font-weight: 600;
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .text-area1 p, .text-area2 p {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    .text-area2 {
+        text-align: right;
+    }
+
+    .exciting, .observing {
+        color:#6B00FC;
+    }
+    
+
+    .first-section {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0px;
+        align-items: center;
     }
 
     .man-microscope {
-        height: 260px;
+        border-radius: 10%;
+        height: 280px;
         width: 380px;
         padding-left: 20px;
     }
 
     .purple-background {
-        width: 100%;
         margin: auto;
+        width: 70%;
+        border-radius: 30px;
         background-color: #6B00FC;
-        padding-top: 10px;
-        height: 230px;
+        height: 280px;
         display: flex;
         justify-content: space-around;
-        font-size: .8rem;
-    }
-
-    .purple-background-ext{
-        width: 100%;
-        height: 70px;
-        background-color: #6B00FC;
-    }
-
-    .more-info-btn {
-        background-color: #FFBF00;
-        width: 200px;
-        height: 40px;
-        border-radius: 20px;
-        text-align: center;
-        padding: 9px 0px;
-        margin: auto;
-        cursor: pointer;
-        font-weight: 600;
-    }
-
-    .more-info-btn a {
-        color: black;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .teacher-wrapper, .kids-wrapper, .researcher-wrapper {
+        align-items: center;
         align-items: center;
         text-align: center;
         color: white;
+    }
+
+    .purple-background p {
+        font-size: 13px;
+    }
+
+    .purple-background h2 {
+        font-size: 16px;
+    }
+
+
+    .second-section {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0px;
+        align-items: center;
+    }
+
+    .genoa {
+        border-radius: 10%;
+        height: 280px;
+        width:  380px;
+        padding-right: 20px;
     }
 
     .teacher {
@@ -495,10 +624,6 @@ a {
 
     .kids-wrapper h2 {
         margin-top: 16px;
-    }
-
-    .researcher-wrapper h2 {
-        margin-top: 0px;
     }
 
     .kids {
@@ -511,70 +636,38 @@ a {
         height: 80px;
     }
 
-    .genoa {
-        height: 260px;
-        width: 380px;
-        padding-right: 20px;
-    }
+  /* Exhibition page */
 
-    /* Mid section */
-
-    #front-text1 {
-        color: black;
-        font-weight: 500;
-        font-size: 2.5rem;
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 10px
-    }
-
-    #front-text2 {
-        color:#6B00FC;
-        font-size: 2.813rem;
-        font-weight: 600;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-
-
-    .content-wrapper {
-        width: 90%;
+    .exhibition-wrapper {
+        width: 70%;
         margin: auto;
     }
 
-
-    .first-row {
-        margin-bottom: 20px;
-        text-align: left;
-    }
-    
-
-    .second-slogan {
-        margin: 12px 0px;
-        text-align: right;
-    }
-    
-    .second-row {
-        margin-bottom: 20px;
-        text-align: right;
-    }
-
-    /* Exhibition page */
-
-    .cosmology {
-        display: none;
-    }
-
-    .container {
-        width: 90%;
-        margin: auto;
+    .cosmology, .evolution, .biologyandmedicine, .ecology {
         display: flex;
+        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
+        margin: 20px 0px;
     }
 
-    .cosmology1 {
-        height: 100px;
-        width: 200px;
+    .cosmology1, .evolution1, .biologyandmedicine1, .ecology1  {
+        width: 100%;
+    }
 
+    .cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
+        font-size: 16px;
+    }
+
+    .cosmology-text p, .evolution-text p, .biologyandmedicine-text p, .ecology-text p {
+        padding: 10px 0px;
+    }
+
+    .cosmology-text h2, .evolution-text h2, .biologyandmedicine-text h2, .ecology-text h2 {
+        font-size: 25px;
+        padding: 3px;
+        background-color: #6B00FC;
+        color: white;
     }
 
     /* Event page */
@@ -722,9 +815,61 @@ a {
         margin-top: 10px;
     }
 
+    /* Footer */
+
+    .contact-wrapper {
+        margin: auto;
+        width: 60%;
+    }
+
+    .line {
+        width: 100%;
+        height: 40px;
+        background-color: #7711FF;
+    }
+
+    .footer-wrapper, .footer-wrapper1 {
+        background-color: #6B00FC;
+    }
+
+    .footer-wrapper1 {
+        margin-top: 0px;
+    }
+
+
+    .footer-row{
+        width: 70%;
+        margin: auto;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .footer-row p {
+        font-size: 13px;
+        padding: 2px;
+    }
+
+    .footer-row h3 {
+        font-size: 16px;
+    }
+
+
+    .csm {
+        text-align: center;
+        color: white;
+        font-size: 13px;
+    }
+
 }
 
 @media only screen and (min-width: 64em) {
+
+    body {
+        padding-top: 70px;
+    }
 
     .logo {
         width: 110px;
@@ -760,13 +905,13 @@ a {
     }
 
     .nav-bar {
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
 
 
     .hero-img {
-        width: 70%;
+        width: 80%;
         background-image: url('/images/mavis-cw-1641281.jpg');
         object-fit: cover;
         height: 55vh;
@@ -808,9 +953,10 @@ a {
 
     .purple-background {
         margin: auto;
+        width: 60%;
         border-radius: 30px;
         background-color: #6B00FC;
-        height: 280px;
+        height: 220px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -919,7 +1065,7 @@ a {
     /* Exhibition page */
 
     .exhibition-wrapper {
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
 
@@ -928,6 +1074,10 @@ a {
         justify-content: space-around;
         align-items: center;
         margin: 20px 0px;
+    }
+
+    .cosmology1, .evolution1, .biologyandmedicine1, .ecology1 {
+        margin-bottom: auto;
     }
 
     .cosmology1 {
@@ -953,6 +1103,7 @@ a {
     .cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
         font-size: 18px;
         padding-right: 30px;
+        margin-bottom: auto;
     }
 
     .cosmology-text h2, .evolution-text h2, .biologyandmedicine-text h2, .ecology-text h2 {
@@ -980,12 +1131,8 @@ a {
         align-items: center;
     }
 
-    .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
-        font-size: 18px;
-    }
-
     .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .sheila, .night {
@@ -1035,9 +1182,11 @@ a {
 
     .event-background {
         background-image: url(images/exhibition-1863344_1920.jpg);
-        height: 35vh;
+        object-fit: cover;
+        height: 45vh;
         display: flex;
         justify-content: space-around;
+        margin: auto;
     }
 
     .slogan-event {
@@ -1055,7 +1204,7 @@ a {
 
     /* Visit page */
 
-    .map-banner {
+    .crowd-banner {
         background-color: #6B00FC;
         height: 100px;
         display: flex;
@@ -1063,14 +1212,26 @@ a {
         color: white;
     }
 
-    .map-title {
+
+    .crowd {
+        background-image: url(images/tetiana-shyshkina-vH94rzYc0xs-unsplash.jpg);
+        height: 400px;
+        background-position: top;
+    }
+
+    .crowd-title {
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .visit-info-wrapper {
+        width: 70%;
         margin: auto;
     }
 
-
-    .map {
-        background-image: url(images/michael-van-kerckhove-iN3xWBNHmnw-unsplash.jpg);
-        height: 400px;
+    .section-divider {
+        display: flex;
+        justify-content: space-around;
     }
 
     .visit-page {
@@ -1078,21 +1239,143 @@ a {
         margin: auto;
     }
 
+    .visit-info-wrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    .visit-page p {
+        font-size: 18px;
+    }
+
+    .visit-page h3 {
+        font-size: 20px;
+    }
+
+    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper  {
+        border: 2px solid #6B00FC;
+        border-radius: 16px;
+        width: auto;
+        padding: 15px;
+    }
+
+    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .support-text  {
+        margin-bottom: 30px;
+    }
+
+    .location-wrapper, .support-wrapper, .interships-wrapper {
+        margin-top: 20px;
+
+    }
+
+    .visit-wrapper {
+        height: 680px;
+        margin-top: 20px
+    }
+
+    .first-three {
+        float: left;
+        width: 45%;
+    }
+
+    .second-three {
+        float: right;
+        width: 45%;
+        margin-top: 20px;
+    }
+
+    .admission-text {
+        padding-top: 10px;
+    }
+
      /* Get involved page */
 
-     .getinvolved-wrapper {
+     .getinvolved-top {
         width: 70%;
         margin: auto;
      }
     
      .getinvolved-img {
         background-image: url('images/william-bout-264826.jpg');
-        height: 50vh;
+        height: 400px;
+    }
+
+    .getinvolved-wrapper {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+    }
+
+    .text-wrapper {
+        width: 70%;
+        padding-right: 40px;
+        margin: 20px;
     }
 
     .support-text, .volunteer-text {
         margin-top: 10px;
     }
+
+    .form-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #6B00FC;
+        color: white;
+        border-radius: 20px;
+        width: 360px;
+        height: 380px;
+        margin: auto;
+        margin-top: 40px;
+      }
+
+      .form-wrapper h3 {
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      label {
+        text-align: left;
+        font-size: 17px;
+    
+      }
+
+      input {
+        border-radius: 8px;
+        width: 240px;
+        height: 35px;
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      textarea  {
+        width: 240px;
+        height: 75px;
+      }
+
+      label, input{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-submitbtn {
+        background-color: #FFBF00;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 9px 0px;
+        margin: auto;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+
+      .form-submitbtn a {
+        color: black;
+      }
 
     /* Footer */
 
@@ -1103,14 +1386,12 @@ a {
 
     .line {
         width: 100%;
-        margin: auto;
-        border: 1px solid white;
+        height: 40px;
+        background-color: #7711FF;
     }
     
     .footer-wrapper, .footer-wrapper1 {
         background-color: #6B00FC;
-        margin-top: 40px;
-        padding-top: 17px;
     }
     
     .footer-wrapper1 {
@@ -1125,6 +1406,7 @@ a {
         display: flex;
         justify-content: space-around;
         margin-top: 10px;
+        margin-bottom: 40px;
     }
 
     .footer-row p {
@@ -1136,7 +1418,5 @@ a {
     .csm {
         text-align: center;
         color: white;
-        padding-top: 50px;
-        padding-bottom: 20px;
     }
 }
