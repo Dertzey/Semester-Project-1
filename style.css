@@ -110,25 +110,26 @@ a {
     }
 
     .science-title h1 {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 70px;
     }
 
     .explore-btn {
         background-color: #FFBF00;
-        width: 150px;
-        height: 40px;
+        width: 100px;
+        height: 20px;
+        padding: 4px 0px;
         border-radius: 20px;
-        text-align: center;
-        padding: 9px 0px;
         cursor: pointer;
         font-weight: 600;
+        display: flex;
+        justify-content: space-around;
 
     }
 
     .explore-btn a {
         font-family: 'Montserrat', sans-serif;
-        font-size: 15px;
+        font-size: 10px;
         color: black;
     }
 
@@ -175,14 +176,14 @@ a {
         border-radius: 10%;
         height: 180px;
         width: 280px;
-        padding-left: 20px;
     }
 
     .purple-background {
         margin: auto;
         background-color: #6B00FC;
-        height: 180px;
+        height: 460px;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         align-items: center;
@@ -191,11 +192,11 @@ a {
     }
 
     .purple-background p {
-        font-size: 10px;
+        font-size: 16px;
     }
 
-    .purple-background h2 {
-        font-size: 12px;
+    .purple-background h3 {
+        font-size: 18px;
     }
 
     .teacher {
@@ -277,11 +278,11 @@ a {
     }
 
     .slogan-event h1 {
-        font-size: 1.4rem;
+        font-size: 20px;
     }
 
     .slogan-event p {
-        font-size: 0.7rem;
+        font-size: 12px;
     }
 
     /* Universal for event page */
@@ -299,11 +300,11 @@ a {
     }
 
     .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .sheila, .night {
@@ -353,13 +354,8 @@ a {
 
     /* Visit page */
 
-    .map {
-        background-image: url(images/GPS_map_generated.jpg);
-        height: 50vh;
-        background-position: center 40px;
-    }
-
-    .map-banner {
+    .crowd-title {
+        font-size: 20px;
         background-color: #6B00FC;
         height: 100px;
         display: flex;
@@ -367,22 +363,35 @@ a {
         color: white;
     }
 
-    .map-banner h2 {
-        margin: auto 0px;
-        color: white;
-    }
-
-    .visit-content {
-        width: 80%;
+    .visit-info-wrapper {
         margin: auto;
     }
 
-    .getinvolved-wrapper {
-        width: 80%;
+    .visit-page {
         margin: auto;
     }
 
-    .location-wrapper, .admission-text, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .support-text  {
+    .visit-info-wrapper {
+        margin: auto;
+    }
+
+    .visit-page p {
+        font-size: 16px;
+    }
+
+    .visit-page h3 {
+        font-size: 20px;
+    }
+
+    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper  {
+        border: 2px solid #6B00FC;
+        border-radius: 16px;
+        width: 70%;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .support-text  {
         margin-bottom: 30px;
     }
 
@@ -391,20 +400,98 @@ a {
 
     }
 
+    .visit-wrapper {
+        margin-top: 20px
+    }
+
     .admission-text {
         padding-top: 10px;
     }
 
     /* Get involved page */
-    
-    .getinvolved-img {
-        background-image: url('images/william-bout-264826.jpg');
-        height: 40vh;
+
+        .getinvolved-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-wrapper {
+        padding-right: 40px;
+        margin: 20px;
     }
 
     .support-text, .volunteer-text {
         margin-top: 10px;
     }
+
+    .form-wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        background-color: #6B00FC;
+        color: white;
+        border-radius: 10px;
+        width: 250px;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+
+      .form-wrapper h3 {
+        font-size: 16px;
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      label {
+        text-align: left;
+        font-size: 16px;
+    
+      }
+
+      input {
+        border-radius: 8px;
+        width: 140px;
+        height: 25px;
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      textarea  {
+        width: 140px;
+        height: 45px;
+      }
+
+      label, input{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-submitbtn {
+        background-color: #FFBF00;
+        width: 130px;
+        height: 30px;
+        border-radius: 20px;
+        text-align: center;
+        margin: auto;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-right: 20px;
+      }
+
+      .form-submitbtn a {
+        color: black;
+        font-size: 13px;
+      }
+
+    
+    .support-text, .volunteer-text {
+        margin-top: 10px;
+    }
+
+
 
         /* Footer */
 
@@ -512,7 +599,7 @@ a {
     }
 
     .science-title h1 {
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 70px;
     }
 
@@ -582,8 +669,7 @@ a {
 
     .purple-background {
         margin: auto;
-        width: 70%;
-        border-radius: 30px;
+        width: 100%;
         background-color: #6B00FC;
         height: 280px;
         display: flex;
@@ -595,11 +681,11 @@ a {
     }
 
     .purple-background p {
-        font-size: 13px;
+        font-size: 16px;
     }
 
-    .purple-background h2 {
-        font-size: 16px;
+    .purple-background h3 {
+        font-size: 18px;
     }
 
 
@@ -685,7 +771,7 @@ a {
     }
 
     .slogan-event h1 {
-        font-size: 1.7rem;
+        font-size: 20px;
     }
 
     .slogan-event p {
@@ -707,11 +793,11 @@ a {
     }
 
     .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .sheila, .night {
@@ -726,7 +812,7 @@ a {
     
     .sheila {
         border-radius: 50%;
-        max-width: 30%;
+        width: 35%;
     }
 
     /* End of 1st section */
@@ -764,7 +850,7 @@ a {
 
     .map {
         background-image: url(images/GPS_map_generated.jpg);
-        height: 60vh;
+        height: 50vh;
         background-position: center -10px;
     }
 
@@ -953,8 +1039,7 @@ a {
 
     .purple-background {
         margin: auto;
-        width: 60%;
-        border-radius: 30px;
+        width: 80%;
         background-color: #6B00FC;
         height: 220px;
         display: flex;
@@ -966,11 +1051,11 @@ a {
     }
 
     .purple-background p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .purple-background h2 {
-        font-size: 23px;
+        font-size: 18px;
     }
 
 
@@ -989,7 +1074,7 @@ a {
     }
 
     .text-area1 p, .text-area2 p {
-        font-size: 20px;
+        font-size: 18px;
         padding-top: 10px;
     }
 
@@ -998,7 +1083,7 @@ a {
     }
 
     .science-title h1 {
-        font-size: 2.875rem;
+        font-size: 30px;
     }
 
     .science-title, .explore-btn {
