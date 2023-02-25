@@ -181,7 +181,7 @@ a {
     .purple-background {
         margin: auto;
         background-color: #6B00FC;
-        height: 460px;
+        height: 540px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -200,19 +200,19 @@ a {
     }
 
     .teacher {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
 
 
     .kids {
-        width: 55px;
-        height: 32px; 
+        width: 70px;
+        height: 60px;
     }
 
     .researcher {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
 
 
@@ -287,28 +287,33 @@ a {
 
     /* Universal for event page */
 
-    .first-block, .second-block, .third-block {
+    .first-block, .second-block, .second-wrapper, .third-block {
         padding: 20px 0px;
     }
 
-    .first-wrapper, .second-wrapper, .third-wrapper{
-        width: 70%;
-        margin: auto;
+    .first-wrapper, .third-wrapper {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+
+    .second-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        text-align: center;
         align-items: center;
     }
 
     .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
-        font-size: 14px;
-    }
-
-    .sheila, .night {
-        margin-left: 10px;
+        font-size: 16px;
+        padding: 5px;
     }
 
     /* Beginning of 1st section */
@@ -318,8 +323,9 @@ a {
     }
     
     .sheila {
+        height: 250px;
+        width: 250px;
         border-radius: 50%;
-        width: 20%;
     }
 
     /* End of 1st section */
@@ -331,14 +337,11 @@ a {
     
     .energetica {
         border-radius: 10px;
-        width: 100%;
-        margin-right: 30px;
+        height: 180px;
+        width: 280px;
+        
     }
 
-    .energetica-wrapper {
-        text-align: right;
-        padding-left: 20px;
-    }
 
     /*End of 2nd section */
     /* Beginning of 3rd section */
@@ -349,7 +352,7 @@ a {
 
     .night {
         border-radius: 10px;
-        width: 30%;
+        width: 280px;
     }
 
     /* Visit page */
