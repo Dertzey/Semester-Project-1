@@ -24,17 +24,6 @@ a {
 }
 
 
-.contact-wrapper {
-    width: 54%;
-    color: white;
-}
-
-.contact-wrapper h2 {
-    font-size: 32px;
-    font-weight: 500;
-    font-family: 'Inter', sans-serif;
-}
-
 .label {
     display: none;
 }
@@ -79,8 +68,8 @@ a {
         background-color: #6B00FC;
         color: white;
         text-align: center;
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 0.938rem;
+        font-weight: 500;
     }
 
     li {
@@ -102,7 +91,8 @@ a {
     }
 
     .hero-img {
-        background-image: url('/images/mavis-cw-1641281.jpg');
+        background-image: url('/images/ruoyu-li-3U9SZGA7nws-unsplash.jpg');
+        background-color: black;
         object-fit: cover;
         height: 55vh;
         display: flex;
@@ -110,7 +100,7 @@ a {
     }
 
     .science-title h1 {
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 70px;
     }
 
@@ -129,7 +119,7 @@ a {
 
     .explore-btn a {
         font-family: 'Montserrat', sans-serif;
-        font-size: 10px;
+        font-size: 0.625rem;
         color: black;
     }
 
@@ -148,13 +138,13 @@ a {
     .front-text1 {
         color: black;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
     }
 
     .text-area1 p, .text-area2 p {
-        font-size: 16px;
+        font-size: 1rem;
         padding-top: 10px;
         text-align: center;
         margin-bottom: 20px;
@@ -192,11 +182,11 @@ a {
     }
 
     .purple-background p {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .purple-background h3 {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .teacher {
@@ -249,7 +239,7 @@ a {
     }
 
     .cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .cosmology-text p, .evolution-text p, .biologyandmedicine-text p, .ecology-text p {
@@ -257,7 +247,7 @@ a {
     }
 
     .cosmology-text h2, .evolution-text h2, .biologyandmedicine-text h2, .ecology-text h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         padding: 3px;
         background-color: #6B00FC;
         color: white;
@@ -267,6 +257,7 @@ a {
 
     .event-background {
         background-image: url(images/exhibition-1863344_1920.jpg);
+        background-color: black;
         height: 35vh;
         display: flex;
         justify-content: space-around;
@@ -278,11 +269,11 @@ a {
     }
 
     .slogan-event h1 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .slogan-event p {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     /* Universal for event page */
@@ -308,11 +299,11 @@ a {
     }
 
     .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
-        font-size: 16px;
+        font-size: 1rem;
         padding: 5px;
     }
 
@@ -357,18 +348,25 @@ a {
 
     /* Visit page */
 
-    .crowd-title {
-        font-size: 20px;
+    img.crowd-people, img.GetInvolved-img {
+        display: block;
+    }
+
+    .purplebanner-title {
         background-color: #6B00FC;
+        width: 100%;
         height: 100px;
         display: flex;
         justify-content: space-around;
         color: white;
     }
 
-    .visit-info-wrapper {
+    .purplebanner-title h1, .getinvolved-title h1 {
+        text-align: center;
         margin: auto;
+        font-size: 1.25rem;
     }
+
 
     .visit-page {
         margin: auto;
@@ -379,11 +377,11 @@ a {
     }
 
     .visit-page p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .visit-page h3 {
-        font-size: 20px;
+        font-size: 1,25rem;
     }
 
     .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper  {
@@ -413,9 +411,14 @@ a {
 
     /* Get involved page */
 
-        .getinvolved-wrapper {
-        display: flex;
-        flex-direction: column;
+    img.GetInvolved {
+        background-image: url('images/william-bout-264826.jpg');
+        display: block;
+    }
+    
+    .getinvolved-wrapper {
+       display: flex;
+       flex-direction: column;
     }
 
     .text-wrapper {
@@ -441,7 +444,7 @@ a {
       }
 
       .form-wrapper h3 {
-        font-size: 16px;
+        font-size: 1rem;
         padding-top: 10px;
         text-align: center;
         margin-bottom: 20px;
@@ -449,7 +452,7 @@ a {
 
       label {
         text-align: left;
-        font-size: 16px;
+        font-size: 1rem;
     
       }
 
@@ -486,7 +489,7 @@ a {
 
       .form-submitbtn a {
         color: black;
-        font-size: 13px;
+        font-size: 0.813rem;
       }
 
     
@@ -496,7 +499,7 @@ a {
 
 
 
-        /* Footer */
+    /* Footer */
 
     .contact-wrapper {
         margin: auto;
@@ -505,7 +508,7 @@ a {
 
     .line {
         width: 100%;
-        height: 40px;
+        height: 20px;
         background-color: #7711FF;
     }
     
@@ -529,11 +532,11 @@ a {
     }
 
     .footer-row h3 {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .footer-row p {
-        font-size: 10px;
+        font-size: 0.625rem;
         padding: 2px;
     }
 
@@ -541,7 +544,7 @@ a {
     .csm {
         text-align: center;
         color: white;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
 }
@@ -570,7 +573,7 @@ a {
     li {
         display: inline-block;
         padding: 10px;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
     }
 
@@ -594,7 +597,8 @@ a {
 
     .hero-img {
         width: 70%;
-        background-image: url('/images/mavis-cw-1641281.jpg');
+        background-image: url('/images/ruoyu-li-3U9SZGA7nws-unsplash.jpg');
+        background-color: black;
         object-fit: cover;
         height: 55vh;
         display: flex;
@@ -602,7 +606,7 @@ a {
     }
 
     .science-title h1 {
-        font-size: 25px;
+        font-size: 1.563rem;
         margin-bottom: 70px;
     }
 
@@ -620,7 +624,7 @@ a {
 
     .explore-btn a {
         font-family: 'Montserrat', sans-serif;
-        font-size: 15px;
+        font-size: 0.938rem;
         color: black;
     }
 
@@ -638,12 +642,12 @@ a {
     .front-text1 {
         color: black;
         font-weight: 600;
-        font-size: 25px;
+        font-size: 1.563rem;
         font-family: 'Montserrat', sans-serif;
     }
 
     .text-area1 p, .text-area2 p {
-        font-size: 18px;
+        font-size: 1.125rem;
         padding-top: 10px;
     }
 
@@ -684,11 +688,11 @@ a {
     }
 
     .purple-background p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .purple-background h3 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
 
@@ -745,7 +749,7 @@ a {
     }
 
     .cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .cosmology-text p, .evolution-text p, .biologyandmedicine-text p, .ecology-text p {
@@ -753,7 +757,7 @@ a {
     }
 
     .cosmology-text h2, .evolution-text h2, .biologyandmedicine-text h2, .ecology-text h2 {
-        font-size: 25px;
+        font-size: 1.563rem;
         padding: 3px;
         background-color: #6B00FC;
         color: white;
@@ -763,6 +767,7 @@ a {
 
     .event-background {
         background-image: url(images/exhibition-1863344_1920.jpg);
+        background-color: black;
         height: 35vh;
         display: flex;
         justify-content: space-around;
@@ -774,7 +779,7 @@ a {
     }
 
     .slogan-event h1 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .slogan-event p {
@@ -796,11 +801,11 @@ a {
     }
 
     .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .sheila, .night {
@@ -851,28 +856,28 @@ a {
 
     /* Visit page */
 
-    .map {
-        background-image: url(images/GPS_map_generated.jpg);
-        height: 50vh;
-        background-position: center -10px;
+    img.crowd-people {
+        display: block;
     }
 
-    .map-banner {
+    .visit-content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .purplebanner-title {
         background-color: #6B00FC;
+        width: 100%;
         height: 100px;
         display: flex;
         justify-content: space-around;
         color: white;
     }
 
-    .map-banner h2 {
-        margin: auto 0px;
-        color: white;
-    }
-
-    .visit-content {
-        width: 70%;
+    .purplebanner-title h1, .getinvolved-title h1 {
+        text-align: center;
         margin: auto;
+        font-size: 1.25rem;
     }
 
     .getinvolved-wrapper {
@@ -893,17 +898,130 @@ a {
         padding-top: 10px;
     }
 
+    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper  {
+        border: 2px solid #6B00FC;
+        border-radius: 16px;
+        width: auto;
+        padding: 15px;
+    }
+
+    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .support-text  {
+        margin-bottom: 30px;
+    }
+
+    .location-wrapper, .support-wrapper, .interships-wrapper {
+        margin-top: 20px;
+
+    }
+
+    .visit-wrapper {
+        height: 680px;
+        margin-top: 20px
+    }
+
+    .first-three {
+        float: left;
+        width: 45%;
+    }
+
+    .second-three {
+        float: right;
+        width: 45%;
+        margin-top: 20px;
+    }
+
+    .admission-text {
+        padding-top: 10px;
+    }
+
     /* Get involved page */
     
-    .getinvolved-img {
+    img.GetInvolved {
         background-image: url('images/william-bout-264826.jpg');
-        height: 50vh;
+        display: block;
+        object-fit: cover;
     }
 
-    .support-text, .volunteer-text {
-        margin-top: 10px;
-    }
-
+    .getinvolved-wrapper {
+        display: flex;
+        flex-direction: column;
+     }
+ 
+     .text-wrapper {
+         margin: 20px;
+     }
+ 
+     .support-text, .volunteer-text {
+         margin-top: 10px;
+     }
+ 
+     .form-wrapper {
+         display: flex;
+         justify-content: space-around;
+         margin: auto;
+         background-color: #6B00FC;
+         color: white;
+         border-radius: 10px;
+         width: 250px;
+         height: 300px;
+         margin: auto;
+         margin-bottom: 20px;
+       }
+ 
+       .form-wrapper h3 {
+         font-size: 1rem;
+         padding-top: 10px;
+         text-align: center;
+         margin-bottom: 20px;
+       }
+ 
+       label {
+         text-align: left;
+         font-size: 1rem;
+     
+       }
+ 
+       input {
+         border-radius: 8px;
+         width: 140px;
+         height: 25px;
+         border: none;
+         margin-bottom: 20px;
+       }
+ 
+       textarea  {
+         width: 140px;
+         height: 45px;
+       }
+ 
+       label, input{
+         display: flex;
+         flex-direction: column;
+       }
+ 
+       .form-submitbtn {
+         background-color: #FFBF00;
+         width: 130px;
+         height: 30px;
+         border-radius: 20px;
+         text-align: center;
+         margin: auto;
+         cursor: pointer;
+         font-weight: 600;
+         margin-top: 10px;
+         margin-right: 20px;
+       }
+ 
+       .form-submitbtn a {
+         color: black;
+         font-size: 0.813rem;
+       }
+ 
+     
+     .support-text, .volunteer-text {
+         margin-top: 10px;
+     }
+ 
     /* Footer */
 
     .contact-wrapper {
@@ -913,7 +1031,7 @@ a {
 
     .line {
         width: 100%;
-        height: 40px;
+        height: 20px;
         background-color: #7711FF;
     }
 
@@ -924,6 +1042,91 @@ a {
     .footer-wrapper1 {
         margin-top: 0px;
     }
+
+    .getinvolved-top {
+        width: 70%;
+        margin: auto;
+     }
+    
+     .getinvolved-img {
+        background-image: url('images/william-bout-264826.jpg');
+        height: 400px;
+    }
+
+    .getinvolved-wrapper {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+    }
+
+    .text-wrapper {
+        margin: 20px;
+    }
+
+    .support-text, .volunteer-text {
+        margin-top: 10px;
+    }
+
+    .form-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #6B00FC;
+        color: white;
+        border-radius: 20px;
+        width: 360px;
+        height: 380px;
+        margin: auto;
+        margin-top: 40px;
+      }
+
+      .form-wrapper h3 {
+        font-size: 1.438rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      label {
+        text-align: left;
+        font-size: 1.063rem;
+    
+      }
+
+      input {
+        border-radius: 8px;
+        width: 240px;
+        height: 35px;
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      textarea  {
+        width: 240px;
+        height: 75px;
+      }
+
+      label, input{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-submitbtn {
+        background-color: #FFBF00;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 9px 0px;
+        margin: auto;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+
+      .form-submitbtn a {
+        color: black;
+      }
 
 
     .footer-row{
@@ -937,19 +1140,19 @@ a {
     }
 
     .footer-row p {
-        font-size: 13px;
+        font-size: 0.813rem;
         padding: 2px;
     }
 
     .footer-row h3 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
 
     .csm {
         text-align: center;
         color: white;
-        font-size: 13px;
+        font-size: 0.813rem;
     }
 
 }
@@ -977,7 +1180,7 @@ a {
     li {
         display: inline-block;
         padding: 10px;
-        font-size: 19px;
+        font-size: 1.188rem;
         font-weight: 500;
     }
 
@@ -1001,7 +1204,8 @@ a {
 
     .hero-img {
         width: 80%;
-        background-image: url('/images/mavis-cw-1641281.jpg');
+        background-image: url('/images/ruoyu-li-3U9SZGA7nws-unsplash.jpg');
+        background-color: black;
         object-fit: cover;
         height: 55vh;
         display: flex;
@@ -1017,7 +1221,7 @@ a {
     .front-text1 {
         color: black;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 1.875rem;
         font-family: 'Montserrat', sans-serif;
     }
 
@@ -1054,11 +1258,11 @@ a {
     }
 
     .purple-background p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .purple-background h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
 
@@ -1077,7 +1281,7 @@ a {
     }
 
     .text-area1 p, .text-area2 p {
-        font-size: 18px;
+        font-size: 1.125rem;
         padding-top: 10px;
     }
 
@@ -1086,7 +1290,7 @@ a {
     }
 
     .science-title h1 {
-        font-size: 30px;
+        font-size: 2.175rem;
     }
 
     .science-title, .explore-btn {
@@ -1189,13 +1393,13 @@ a {
     }
 
     .cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
-        font-size: 18px;
+        font-size: 1.125rem;
         padding-right: 30px;
         margin-bottom: auto;
     }
 
     .cosmology-text h2, .evolution-text h2, .biologyandmedicine-text h2, .ecology-text h2 {
-        font-size: 30px;
+        font-size: 1.875rem;
         background-color: #6B00FC;
         color: white;
     }
@@ -1203,16 +1407,18 @@ a {
     /* Universal for event page */
 
     .event-wrapper {
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
 
-    .first-block, .second-block, .third-block {
+    .first-block, .second-block, .second-wrapper, .third-block {
         padding: 20px 0px;
+        width: 80%;
+        margin: auto;
     }
 
-    .first-wrapper, .second-wrapper, .third-wrapper{
-        width: 80%;
+    .first-wrapper, .second-wrapper, .third-wrapper {
+        width: 50%;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -1220,7 +1426,8 @@ a {
     }
 
     .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
-        font-size: 18px;
+        font-size: 1.125rem;
+        padding-right: 20px;
     }
 
     .sheila, .night {
@@ -1235,7 +1442,8 @@ a {
     
     .sheila {
         border-radius: 50%;
-        max-width: 250px;
+        height: 250px;
+        width: 250px;
     }
 
     /* End of 1st section */
@@ -1247,12 +1455,11 @@ a {
     
     .energetica {
         border-radius: 10px;
-        width: 33vh;
+        width: 43vh;
         margin-right: 30px;
     }
 
     .energetica-wrapper {
-        text-align: right;
         padding-left: 20px;
     }
 
@@ -1262,14 +1469,14 @@ a {
     .third-block {
         background-color: #038DF1;
     }
-
     .night {
         border-radius: 10px;
-        width: 33vh;
+        width: 43vh;
     }
 
     .event-background {
         background-image: url(images/exhibition-1863344_1920.jpg);
+        background-color: black;
         object-fit: cover;
         height: 45vh;
         display: flex;
@@ -1283,11 +1490,11 @@ a {
     }
 
     .slogan-event h1 {
-        font-size: 40px;
+        font-size: 2.175rem;
     }
 
     .slogan-event p {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     /* Visit page */
@@ -1300,16 +1507,31 @@ a {
         color: white;
     }
 
-
-    .crowd {
-        background-image: url(images/tetiana-shyshkina-vH94rzYc0xs-unsplash.jpg);
-        height: 400px;
-        background-position: top;
-    }
-
     .crowd-title {
         margin: auto;
-        font-size: 20px;
+        font-size: 1.25rem;
+    }
+
+    img.crowd-people {
+        height: 400px;
+        object-position: top;
+        object-fit: cover;
+        display: block;
+    }
+
+    .purplebanner-title {
+        background-color: #6B00FC;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+
+    .purplebanner-title h1, .getinvolved-title h1 {
+        text-align: center;
+        margin: auto;
+        font-size: 1.25rem;
     }
 
     .visit-info-wrapper {
@@ -1323,7 +1545,7 @@ a {
     }
 
     .visit-page {
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
 
@@ -1333,11 +1555,11 @@ a {
     }
 
     .visit-page p {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .visit-page h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper  {
@@ -1379,92 +1601,97 @@ a {
      /* Get involved page */
 
      .getinvolved-top {
-        width: 70%;
+        width: 80%;
         margin: auto;
      }
     
-     .getinvolved-img {
+     img.GetInvolved {
         background-image: url('images/william-bout-264826.jpg');
+        display: block;
         height: 400px;
+        object-fit: cover;
     }
 
     .getinvolved-wrapper {
         display: flex;
-        justify-content: space-around;
-        width: 70%;
+        flex-direction: column;
+     }
+ 
+     .text-wrapper {
+        width: 80%;
         margin: auto;
-    }
-
-    .text-wrapper {
-        width: 70%;
-        padding-right: 40px;
-        margin: 20px;
-    }
-
-    .support-text, .volunteer-text {
+     }
+ 
+     .support-text, .volunteer-text {
         margin-top: 10px;
-    }
-
-    .form-wrapper {
+     }
+ 
+     .form-wrapper {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        margin: auto;
         background-color: #6B00FC;
         color: white;
-        border-radius: 20px;
-        width: 360px;
-        height: 380px;
+        border-radius: 10px;
+        width: 250px;
+        height: 300px;
         margin: auto;
-        margin-top: 40px;
-      }
-
-      .form-wrapper h3 {
-        font-size: 23px;
-        text-align: center;
         margin-bottom: 20px;
-      }
-
-      label {
-        text-align: left;
-        font-size: 17px;
-    
-      }
-
-      input {
-        border-radius: 8px;
-        width: 240px;
-        height: 35px;
-        border: none;
-        margin-bottom: 20px;
-      }
-
-      textarea  {
-        width: 240px;
-        height: 75px;
-      }
-
-      label, input{
-        display: flex;
-        flex-direction: column;
-      }
-
-      .form-submitbtn {
-        background-color: #FFBF00;
-        width: 200px;
-        height: 40px;
-        border-radius: 20px;
-        text-align: center;
-        padding: 9px 0px;
-        margin: auto;
-        cursor: pointer;
-        font-weight: 600;
-        margin-top: 10px;
-      }
-
-      .form-submitbtn a {
-        color: black;
-      }
-
+       }
+ 
+       .form-wrapper h3 {
+         font-size: 1rem;
+         padding-top: 10px;
+         text-align: center;
+         margin-bottom: 20px;
+       }
+ 
+       label {
+         text-align: left;
+         font-size: 1rem;
+     
+       }
+ 
+       input {
+         border-radius: 8px;
+         width: 140px;
+         height: 25px;
+         border: none;
+         margin-bottom: 20px;
+       }
+ 
+       textarea  {
+         width: 140px;
+         height: 45px;
+       }
+ 
+       label, input{
+         display: flex;
+         flex-direction: column;
+       }
+ 
+       .form-submitbtn {
+         background-color: #FFBF00;
+         width: 130px;
+         height: 30px;
+         border-radius: 20px;
+         text-align: center;
+         margin: auto;
+         cursor: pointer;
+         font-weight: 600;
+         margin-top: 10px;
+         margin-right: 20px;
+       }
+ 
+       .form-submitbtn a {
+         color: black;
+         font-size: 0.813rem;
+       }
+ 
+     
+     .support-text, .volunteer-text {
+         margin-top: 10px;
+     }
     /* Footer */
 
     .contact-wrapper {
@@ -1474,7 +1701,7 @@ a {
 
     .line {
         width: 100%;
-        height: 40px;
+        height: 20px;
         background-color: #7711FF;
     }
     
@@ -1498,7 +1725,7 @@ a {
     }
 
     .footer-row p {
-        font-size: 16px;
+        font-size: 1rem;
         padding: 2px;
     }
 
