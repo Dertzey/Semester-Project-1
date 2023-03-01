@@ -1418,7 +1418,7 @@ a {
     }
 
     .first-wrapper, .second-wrapper, .third-wrapper {
-        width: 50%;
+        width: 70%;
         margin: auto;
         display: flex;
         justify-content: space-between;
