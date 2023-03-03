@@ -798,6 +798,7 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 20px;
     }
 
     .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
@@ -805,6 +806,7 @@ a {
     }
 
     .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
+        padding-right: 20px;
         font-size: 1.125rem;
     }
 
@@ -820,7 +822,8 @@ a {
     
     .sheila {
         border-radius: 50%;
-        width: 35%;
+        height: 200px;
+        width: 200px;
     }
 
     /* End of 1st section */
@@ -850,8 +853,7 @@ a {
 
     .night {
         border-radius: 10px;
-        width: 16.063rem;
-        height: 23.25rem;
+        width: 35vh;
     }
 
     /* Visit page */
