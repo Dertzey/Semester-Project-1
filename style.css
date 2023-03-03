@@ -1,4 +1,65 @@
+/* IGNORE CSS DRY */
+
+html, body, img, .purple-background, #main-header, .purplebanner-title, .line, .nav-bar {
+    width: 100%;
+}
+
+.exhibition-wrapper, .footer-row {
+    width: 70%;
+}
+
+.hero-img,  .cosmology, .evolution, .BiologyandMedicine, .RoboticsandAI, .event-background, .map, .getinvolved-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main-header, .purplebanner-title, .hero-img, .first-section, .purple-background, .second-section, .cosmology, .evolution, .biologyandmedicine, .ecology, .event-background, .first-wrapper, .third-wrapper, .second-wrapper, .first-wrapper, .second-wrapper, .third-wrapper, .form-wrapper, .footer-row {
+    display: flex;
+}
+
+.purplebanner-title, .first-section, .purple-background, .second-section, .cosmology, .evolution, .biologyandmedicine, .ecology, .event-background, .form-wrapper, .footer-row   {
+    justify-content: space-around;
+}
+
+#main-header, .first-section, .purple-background, .second-section, .cosmology, .evolution, .biologyandmedicine, .ecology, .first-wrapper, .third-wrapper, .second-wrapper {
+    align-items: center;
+}
+
+#main-header, .nav-bar, .purplebanner-title h1, .getinvolved-title h1, .hero-img, .science-title, .explore-btn, .content-wrapper, .purple-background, .exhibition-wrapper, .first-wrapper, .second-wrapper, .third-wrapper, .visit-page, .visit-wrapper, .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .form-wrapper, .form-submitbtn, .contact-wrapper, .footer-row  {
+    margin: auto;
+}
+
+.purplebanner-title h1, .getinvolved-title h1, .explore-btn, .purple-background, .first-wrapper, .third-wrapper, .second-wrapper, .form-wrapper h3, .csm   {
+    text-align: center;
+}
+
+.explore-btn a, .front-text1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.purplebanner-title, .purple-background, .footer-wrapper, .footer-wrapper1 {
+    background-color: #6B00FC;
+}
+
+.purplebanner-title, .science-title h1, .purple-background, .cosmology-text h1, .evolution-text h1, .biologyandmedicine-text h1, .ecology-text h1, .slogan-event, .form-wrapper, .footer-row, .csm  {
+    color: white;
+}
+
 /*Universal properties*/
+
+:root {
+    --primary-bg-color: #6B00FC;
+    --text-color1: white;
+    --text-color2-blck: black;
+    --text-color2-purp: #6b00fc;
+    --text-color2-btn: black;
+    --bgColor-firstBlock: #FFBF00;
+    --bgColor-thirdBlock: #038DF1;
+    --bgColor-formWrapper: #6b00fc;
+    --bgColor-Exhibitionh1: #6b00fc;
+}
+
 
 * {
     padding: 0px;
@@ -9,18 +70,303 @@
     font-family: 'Inter', sans-serif;
 }
 
-html, body, img, .purple-background {
-    width: 100%;
+
+#main-list li:hover a {
+    border-bottom: 1px solid white;
+}
+
+#main-header {
+    background-color: var(--primary-bg-color);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#hamburger:checked + ul, img.crowd-people, img.GetInvolved {
+    display: block;
+}
+
+ul {
+    float: right;
 }
 
 a {
-    color: white;
+    color: var(--text-color1);
 }
 
-.hero-img, .skelekton, .cosmology, .evolution, .BiologyandMedicine, .RoboticsandAI, .event-background, .map, .getinvolved-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.purplebanner-title {
+    height: 100px;
+}
+
+.purplebanner-title h1, .getinvolved-title h1 {
+    font-size: 1.25rem;
+}
+
+
+/* Universal home page */
+
+.hero-img {
+    background-image: url('/images/ruoyu-li-3U9SZGA7nws-unsplash.jpg');
+    background-color: black;
+    object-fit: cover;
+    height: 55vh;
+}
+
+.science-title h1 {
+    margin-bottom: 70px;
+}
+
+.explore-btn {
+    background-color: #FFBF00;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 9px 0px;
+}
+
+.explore-btn a {
+    color: var(--text-color2);
+}
+
+.front-text1 {
+    color: var(--text-color2);
+    font-weight: 600;
+}
+
+.text-area1 p, .text-area2 p {
+    font-size: 1.125rem;
+    padding-top: 10px;
+    line-height: 25px;
+}
+
+.exciting, .observing {
+    color: var(--text-color2-purp)
+}
+
+.first-section {
+    margin: 40px 0px;
+}
+
+.man-microscope {
+    border-radius: 10%;
+    height: 280px;
+    width: 380px;
+    padding-left: 20px;
+}
+
+.purple-background h3 {
+    font-size: 1.125rem;
+}
+
+.kids {
+    width: 110px;
+    height: 65px; 
+}
+
+.kids-wrapper h1 {
+    margin-top: 16px;
+}
+
+.teacher, .researcher {
+    width: 80px;
+    height: 80px;
+}
+
+.second-section {
+    margin: 40px 0px;
+}
+
+.genoa {
+    border-radius: 10%;
+    height: 280px;
+    width:  380px;
+    padding-right: 20px;
+}
+
+/* Universal for exhibition page */
+
+.cosmology, .evolution, .biologyandmedicine, .ecology {
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.cosmology-text p, .evolution-text p, .biologyandmedicine-text p, .ecology-text p {
+    padding: 10px 0px;
+}
+
+.cosmology-text h1, .evolution-text h1, .biologyandmedicine-text h1, .ecology-text h1 {
+    font-size: 1.25rem;
+    padding: 3px;
+    background-color: var(--bgColor-Exhibitionh1);
+}
+
+/* Universal for event page */
+
+.event-background {
+    background-image: url(images/exhibition-1863344_1920.jpg);
+    background-color: black;
+    height: 35vh;
+}
+
+.slogan-event {
+    margin: auto 0px;
+}
+
+.slogan-event h1, .slogan-event p {
+    font-size: 1.25rem;
+}
+
+.first-block, .second-block, .second-wrapper, .third-block {
+    padding: 20px 0px;
+}
+
+.first-wrapper, .third-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second-wrapper {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.professor-wrapper h1, .energetica-wrapper h1, .night-wrapper h1 {
+    font-size: 1.125rem;
+}
+
+.professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.first-block {
+    background-color: var(--bgColor-firstBlock);
+}
+
+.sheila {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.night {
+    border-radius: 10px;
+}
+
+.sheila, .night {
+    margin-left: 10px;
+}
+
+.energetica {
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.third-block {
+    background-color: var(--bgColor-thirdBlock);
+}
+
+.first-wrapper, .second-wrapper, .third-wrapper {
+    justify-content: space-between;
+}
+/* Universal visit page */
+
+.visit-wrapper {
+    height: 650px;
+    margin-top: 20px;
+    margin: 0px 20px;
+}
+
+.visit-page h3 {
+    font-size: 1.25rem;
+}
+
+.location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper  {
+    border: 2px solid #6B00FC;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.support-text {
+    margin-bottom: 30px;
+}
+
+.location-wrapper, .support-wrapper, .interships-wrapper {
+    margin-top: 20px;
+}
+
+/* Universal get involved page */
+
+img.GetInvolved {
+    background-image: url('images/william-bout-264826.jpg');
+    height: 400px;
+    object-fit: cover;
+}
+
+.text-wrapper {
+    padding-right: 40px;
+    margin: 20px;
+}
+
+.support-text, .volunteer-text {
+    margin-top: 10px;
+}
+
+.form-wrapper {
+    background-color: var(--bgColor-formWrapper);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.form-wrapper h3 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form-submitbtn {
+background-color: #FFBF00;
+width: 130px;
+height: 30px;
+border-radius: 20px;
+text-align: center;
+cursor: pointer;
+font-weight: 600;
+margin-top: 10px;
+margin-right: 20px;
+}
+
+.form-submitbtn a {
+    color: black;
+    font-size: 0.813rem;
+}
+
+/* Footer */
+
+.contact-wrapper {
+    width: 60%;
+}
+
+.line {
+    height: 20px;
+    background-color: #7711FF;
+}
+
+.footer-row{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.footer-row p {
+    padding: 2px;
 }
 
 
@@ -30,1710 +376,667 @@ a {
 
 
 @media only screen and (max-width: 48em) {
-    /* Top section */
+/* Top section */
 
-    body {
-        padding-top: 50px;
-    }
+body {
+    padding-top: 50px;
+}
+
+.logo {
+    width: 79px;
+    margin-left: 20px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-header {
+    height: 51px;
+    justify-content: space-between;
+}
+
+#main-list {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    background-color: #6B00FC;
+    text-align: center;
+    font-size: 0.938rem;
+    font-weight: 500;
+}
+
+li {
+    display: flex;
+    padding: 20px;
     
-    .logo {
-        width: 79px;
-        margin-left: 20px;
-    }
+}
 
-    .nav-bar {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+#menu {
+    font-size: 1.5em;
+    margin-right: 20px;    
+}
 
-    #main-header {
-        background-color: #6B00FC;
-        width: 100%;
-        height: 51px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        z-index: 999;
-        top: 0;
-    }
+ul, #hamburger {
+    display: none;
+}
 
-    #main-list {
-        font-family: 'Inter', sans-serif;
-        position: absolute;
-        right: 0px;
-        top: 30px;
-        background-color: #6B00FC;
-        color: white;
-        text-align: center;
-        font-size: 0.938rem;
-        font-weight: 500;
-    }
+.science-title h1 {
+    font-size: 1.25rem;
+}
 
-    li {
-        padding: 20px;
-    }
+.explore-btn {
+    width: 100px;
+    height: 20px;
+    padding: 4px 0px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.explore-btn a {
+    font-size: 0.625rem;
+}
+
+
+.content-wrapper {
+    width: 90%;
+}
+
+.front-text1 {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.text-area1 p, .text-area2 p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.first-section, .second-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.man-microscope {
+    height: 180px;
+    width: 280px;
+}
+
+.purple-background {
+    height: 540px;
+    flex-direction: column;
+}
+
+.purple-background p {
+    font-size: 0.75rem;
+}
+
+.purple-background h3 {
+    font-size: 0.875rem;
+}
+
+.teacher {
+    width: 60px;
+    height: 60px;
+}
+
+
+.kids {
+    width: 70px;
+    height: 60px;
+}
+
+.researcher {
+    width: 60px;
+    height: 60px;
+}
+
+.second-section {
+    flex-direction: column-reverse;
+}
+
+.genoa {
+    height: 180px;
+    width: 280px;
+}
+
+/* Exhibition page */
+
+.cosmology-text h1, .evolution-text h1, .biologyandmedicine-text h1, .ecology-text h1 {
+    font-size: 1.25rem;
+}
+
+/* Event page */
+
+.slogan-event p {
+    font-size: 0.75rem;
+}
+
+/* Beginning of 2nd section */
+
+.energetica {
+    height: 180px;
+    width: 280px;
+}
+
+/* Beginning of 3rd section */
+
+.night {
+    width: 280px;
+}
+
+/* Visit page */
+
+.location-wrapper, .support-wrapper, .interships-wrapper {
+    margin-top: 20px;
+}
+
+.admission-text {
+    padding-top: 10px;
+}
+
+.visit-wrapper {
+    height: initial;
+}
+
+/* Get involved page */
+
+.getinvolved-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper {
+    width: 250px;
+    height: 300px;
+}
+
+input {
+    border-radius: 8px;
+    width: 140px;
+    height: 25px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 140px;
+    height: 45px;
+}
+
+label,
+input {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+
+
+.footer-row{
+    width: 100%;
+}
+
+.footer-row p {
+    font-size: 0.625rem;
+}
+
+
+.csm {
+    font-size: 0.75rem;
+}
+}
+
+@media only screen and (min-width: 48.0625em) and (max-width: 64em) {
+
+body {
+    padding-top: 60px;
+}
+
+.logo {
+    width: 80px;
+    float: left;
     
+}
 
-    #menu {
-        font-size: 1.5em;
-        margin-right: 20px;    
-    }
-
-    ul, #hamburger {
-        display: none;
-    }
-
-    #hamburger:checked + ul {
-        display: block;
-    }
-
-    .hero-img {
-        background-image: url('/images/ruoyu-li-3U9SZGA7nws-unsplash.jpg');
-        background-color: black;
-        object-fit: cover;
-        height: 55vh;
-        display: flex;
-        margin: auto;
-    }
-
-    .science-title h1 {
-        font-size: 1.25rem;
-        margin-bottom: 70px;
-    }
-
-    .explore-btn {
-        background-color: #FFBF00;
-        width: 100px;
-        height: 20px;
-        padding: 4px 0px;
-        border-radius: 20px;
-        cursor: pointer;
-        font-weight: 600;
-        display: flex;
-        justify-content: space-around;
-
-    }
-
-    .explore-btn a {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 0.625rem;
-        color: black;
-    }
-
-    .science-title, .explore-btn {
-        color: white;
-        margin: auto;
-
-    }
-
-
-    .content-wrapper {
-        width: 90%;
-        margin: auto;
-    }
-
-    .front-text1 {
-        color: black;
-        font-weight: 600;
-        font-size: 1.25rem;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-    }
-
-    .text-area1 p, .text-area2 p {
-        font-size: 1rem;
-        padding-top: 10px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .exciting, .observing {
-        color:#6B00FC;
-    }
-    
-
-    .first-section {
-        display: flex;
-        flex-direction: column;
-        margin: 40px 0px;
-        align-items: center;
-    }
-
-    .man-microscope {
-        border-radius: 10%;
-        height: 180px;
-        width: 280px;
-    }
-
-    .purple-background {
-        margin: auto;
-        background-color: #6B00FC;
-        height: 540px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        align-items: center;
-        text-align: center;
-        color: white;
-    }
-
-    .purple-background p {
-        font-size: 0.75rem;
-    }
-
-    .purple-background h3 {
-        font-size: 0.875rem;
-    }
-
-    .teacher {
-        width: 60px;
-        height: 60px;
-    }
-
-
-    .kids {
-        width: 70px;
-        height: 60px;
-    }
-
-    .researcher {
-        width: 60px;
-        height: 60px;
-    }
-
-
-    .second-section {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 40px 0px;
-        align-items: center;
-    }
-
-    .genoa {
-        border-radius: 10%;
-        height: 180px;
-        width: 280px;
-    }
-
-      /* Exhibition page */
-
-      .exhibition-wrapper {
-        width: 70%;
-        margin: auto;
-    }
-
-    .cosmology, .evolution, .biologyandmedicine, .ecology {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px 0px;
-    }
-
-    .cosmology1, .evolution1, .biologyandmedicine1, .ecology1  {
-        width: 100%;
-    }
-
-    .cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
-        font-size: 1rem;
-    }
-
-    .cosmology-text p, .evolution-text p, .biologyandmedicine-text p, .ecology-text p {
-        padding: 10px 0px;
-    }
-
-    .cosmology-text h2, .evolution-text h2, .biologyandmedicine-text h2, .ecology-text h2 {
-        font-size: 1.25rem;
-        padding: 3px;
-        background-color: #6B00FC;
-        color: white;
-    }
-
-    /* Event page */
-
-    .event-background {
-        background-image: url(images/exhibition-1863344_1920.jpg);
-        background-color: black;
-        height: 35vh;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .slogan-event {
-        color: white;
-        margin: auto 0px;
-    }
-
-    .slogan-event h1 {
-        font-size: 1.25rem;
-    }
-
-    .slogan-event p {
-        font-size: 0.75rem;
-    }
-
-    /* Universal for event page */
-
-    .first-block, .second-block, .second-wrapper, .third-block {
-        padding: 20px 0px;
-    }
-
-    .first-wrapper, .third-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-    }
-
-    .second-wrapper {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-    }
-
-    .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
-        font-size: 1.125rem;
-    }
-
-    .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
-        font-size: 1rem;
-        padding: 5px;
-    }
-
-    /* Beginning of 1st section */
-
-    .first-block {
-        background-color: #FFBF00;
-    }
-    
-    .sheila {
-        height: 250px;
-        width: 250px;
-        border-radius: 50%;
-    }
-
-    /* End of 1st section */
-    /* Beginning of 2nd section */
-
-    .energetica {
-        margin-left: 10px;
-    }
-    
-    .energetica {
-        border-radius: 10px;
-        height: 180px;
-        width: 280px;
-        
-    }
-
-
-    /*End of 2nd section */
-    /* Beginning of 3rd section */
-
-    .third-block {
-        background-color: #038DF1;
-    }
-
-    .night {
-        border-radius: 10px;
-        width: 280px;
-    }
-
-    /* Visit page */
-
-    img.crowd-people, img.GetInvolved-img {
-        display: block;
-    }
-
-    .purplebanner-title {
-        background-color: #6B00FC;
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: space-around;
-        color: white;
-    }
-
-    .purplebanner-title h1, .getinvolved-title h1 {
-        text-align: center;
-        margin: auto;
-        font-size: 1.25rem;
-    }
-
-
-    .visit-page {
-        margin: auto;
-    }
-
-    .visit-info-wrapper {
-        margin: auto;
-    }
-
-    .visit-page p {
-        font-size: 1rem;
-    }
-
-    .visit-page h3 {
-        font-size: 1,25rem;
-    }
-
-    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper  {
-        border: 2px solid #6B00FC;
-        border-radius: 16px;
-        width: 70%;
-        margin: auto;
-        padding: 15px;
-    }
-
-    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .support-text  {
-        margin-bottom: 30px;
-    }
-
-    .location-wrapper, .support-wrapper, .interships-wrapper {
-        margin-top: 20px;
-
-    }
-
-    .visit-wrapper {
-        margin-top: 20px
-    }
-
-    .admission-text {
-        padding-top: 10px;
-    }
-
-    /* Get involved page */
-
-    img.GetInvolved {
-        background-image: url('images/william-bout-264826.jpg');
-        display: block;
-    }
-    
-    .getinvolved-wrapper {
-       display: flex;
-       flex-direction: column;
-    }
-
-    .text-wrapper {
-        padding-right: 40px;
-        margin: 20px;
-    }
-
-    .support-text, .volunteer-text {
-        margin-top: 10px;
-    }
-
-    .form-wrapper {
-        display: flex;
-        justify-content: space-around;
-        margin: auto;
-        background-color: #6B00FC;
-        color: white;
-        border-radius: 10px;
-        width: 250px;
-        height: 300px;
-        margin: auto;
-        margin-bottom: 20px;
-      }
-
-      .form-wrapper h3 {
-        font-size: 1rem;
-        padding-top: 10px;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      label {
-        text-align: left;
-        font-size: 1rem;
-    
-      }
-
-      input {
+#hamburger, #menu {
+    display: none;
+}
+
+#main-header {
+    height: 60px;
+}
+
+.nav-bar {
+    width: 70%;
+}
+
+
+.hero-img {
+    width: 70%;
+}
+
+.science-title h1 {
+    font-size: 1.563rem;
+}
+
+.explore-btn {
+    width: 150px;
+    height: 40px;
+}
+
+.explore-btn a {
+    font-size: 0.938rem;
+}
+
+
+.content-wrapper {
+    width: 70%;
+}
+
+.front-text1 {
+    font-size: 1.563rem;
+}
+
+.text-area2 {
+    text-align: right;
+}
+
+.first-section {
+    justify-content: space-around;
+}
+
+.purple-background {
+    height: 280px;
+}
+
+/* Exhibition page */
+
+.cosmology-text h1, .evolution-text h1, .biologyandmedicine-text h1, .ecology-text h1 {
+    font-size: 1.563rem;
+}
+
+/* Event page */
+
+.slogan-event p {
+    font-size: .9rem;
+}
+
+.first-wrapper, .second-wrapper, .third-wrapper{
+    width: 80%;
+    padding: 20px;
+}
+
+.professor-wrapper h1, .energetica-wrapper h1, .night-wrapper h1 {
+    font-size: 1.125rem;
+}
+
+.professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
+    padding-right: 20px;
+    font-size: 1.125rem;
+}
+
+/* Beginning of 2nd section */
+
+.energetica {
+    width: 33vh;
+}
+
+.energetica-wrapper {
+    text-align: right;
+    padding-left: 20px;
+}
+
+/* Beginning of 3rd section */
+
+.night {
+    width: 35vh;
+}
+
+/* Visit page */
+
+.visit-content {
+    width: 70%;
+    margin: auto;
+}
+
+.first-three {
+    float: left;
+    width: 45%;
+}
+
+.second-three {
+    float: right;
+    width: 45%;
+    margin-top: 20px;
+}
+
+/* Get involved page */
+
+    input {
         border-radius: 8px;
         width: 140px;
         height: 25px;
         border: none;
         margin-bottom: 20px;
-      }
+    }
 
-      textarea  {
+    textarea  {
         width: 140px;
         height: 45px;
-      }
+    }
 
-      label, input{
+    label, input{
         display: flex;
         flex-direction: column;
-      }
-
-      .form-submitbtn {
-        background-color: #FFBF00;
-        width: 130px;
-        height: 30px;
-        border-radius: 20px;
-        text-align: center;
-        margin: auto;
-        cursor: pointer;
-        font-weight: 600;
-        margin-top: 10px;
-        margin-right: 20px;
-      }
-
-      .form-submitbtn a {
-        color: black;
-        font-size: 0.813rem;
-      }
-
-    
-    .support-text, .volunteer-text {
-        margin-top: 10px;
     }
 
-
-
-    /* Footer */
-
-    .contact-wrapper {
-        margin: auto;
-        width: 60%;
+.getinvolved-top {
+    width: 70%;
+    margin: auto;
     }
 
-    .line {
-        width: 100%;
-        height: 20px;
-        background-color: #7711FF;
-    }
-    
-    .footer-wrapper, .footer-wrapper1 {
-        background-color: #6B00FC;
-    }
-    
-    .footer-wrapper1 {
-        margin-top: 0px;
-    }
-    
-    
-    .footer-row{
-        width: 100%;
-        margin: auto;
-        color: white;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10px;
-        margin-bottom: 40px;
+    .getinvolved-img {
+    background-image: url('images/william-bout-264826.jpg');
+    height: 400px;
+}
+
+.getinvolved-wrapper {
+    width: 75%;
+    margin: auto;
+}
+
+.form-wrapper {
+    width: 360px;
+    height: 380px;
     }
 
-    .footer-row h3 {
-        font-size: 0.875rem;
+    input {
+    border-radius: 8px;
+    width: 240px;
+    height: 35px;
+    border: none;
+    margin-bottom: 20px;
     }
 
-    .footer-row p {
-        font-size: 0.625rem;
-        padding: 2px;
+    textarea  {
+    width: 240px;
+    height: 75px;
     }
 
-    
-    .csm {
-        text-align: center;
-        color: white;
-        font-size: 0.75rem;
+    label, input{
+    display: flex;
+    flex-direction: column;
     }
 
+/* Footer */
+
+.footer-row p {
+    font-size: 0.813rem;
 }
 
 
-@media only screen and (min-width: 48.0625em) and (max-width: 64em) {
-
-    body {
-        padding-top: 60px;
-    }
-
-    .logo {
-        width: 80px;
-        float: left;
-        
-    }
-
-    #hamburger, #menu {
-        display: none;
-    }
-
-    ul {
-        float: right;
-    }
-
-    li {
-        display: inline-block;
-        padding: 10px;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-    #main-header {
-        background-color: #6B00FC;
-        margin: auto;
-        width: 100%;
-        height: 60px;
-        position: fixed;
-        display: flex;
-        align-items: center;
-        z-index: 999;
-        top: 0;
-    }
-
-    .nav-bar {
-        width: 70%;
-        margin: auto;
-    }
-
-
-    .hero-img {
-        width: 70%;
-        background-image: url('/images/ruoyu-li-3U9SZGA7nws-unsplash.jpg');
-        background-color: black;
-        object-fit: cover;
-        height: 55vh;
-        display: flex;
-        margin: auto;
-    }
-
-    .science-title h1 {
-        font-size: 1.563rem;
-        margin-bottom: 70px;
-    }
-
-    .explore-btn {
-        background-color: #FFBF00;
-        width: 150px;
-        height: 40px;
-        border-radius: 20px;
-        text-align: center;
-        padding: 9px 0px;
-        cursor: pointer;
-        font-weight: 600;
-
-    }
-
-    .explore-btn a {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 0.938rem;
-        color: black;
-    }
-
-    .science-title, .explore-btn {
-        color: white;
-        margin: auto;
-    }
-
-
-    .content-wrapper {
-        width: 70%;
-        margin: auto;
-    }
-
-    .front-text1 {
-        color: black;
-        font-weight: 600;
-        font-size: 1.563rem;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .text-area1 p, .text-area2 p {
-        font-size: 1.125rem;
-        padding-top: 10px;
-    }
-
-    .text-area2 {
-        text-align: right;
-    }
-
-    .exciting, .observing {
-        color:#6B00FC;
-    }
-    
-
-    .first-section {
-        display: flex;
-        justify-content: space-around;
-        margin: 40px 0px;
-        align-items: center;
-    }
-
-    .man-microscope {
-        border-radius: 10%;
-        height: 280px;
-        width: 380px;
-        padding-left: 20px;
-    }
-
-    .purple-background {
-        margin: auto;
-        width: 100%;
-        background-color: #6B00FC;
-        height: 280px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        align-items: center;
-        text-align: center;
-        color: white;
-    }
-
-    .purple-background p {
-        font-size: 1rem;
-    }
-
-    .purple-background h3 {
-        font-size: 1.125rem;
-    }
-
-
-    .second-section {
-        display: flex;
-        justify-content: space-around;
-        margin: 40px 0px;
-        align-items: center;
-    }
-
-    .genoa {
-        border-radius: 10%;
-        height: 280px;
-        width:  380px;
-        padding-right: 20px;
-    }
-
-    .teacher {
-        width: 80px;
-        height: 80px;
-    }
-
-    .kids-wrapper h2 {
-        margin-top: 16px;
-    }
-
-    .kids {
-        width: 110px;
-        height: 65px; 
-    }
-
-    .researcher {
-        width: 80px;
-        height: 80px;
-    }
-
-  /* Exhibition page */
-
-    .exhibition-wrapper {
-        width: 70%;
-        margin: auto;
-    }
-
-    .cosmology, .evolution, .biologyandmedicine, .ecology {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px 0px;
-    }
-
-    .cosmology1, .evolution1, .biologyandmedicine1, .ecology1  {
-        width: 100%;
-    }
-
-    .cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
-        font-size: 1rem;
-    }
-
-    .cosmology-text p, .evolution-text p, .biologyandmedicine-text p, .ecology-text p {
-        padding: 10px 0px;
-    }
-
-    .cosmology-text h2, .evolution-text h2, .biologyandmedicine-text h2, .ecology-text h2 {
-        font-size: 1.563rem;
-        padding: 3px;
-        background-color: #6B00FC;
-        color: white;
-    }
-
-    /* Event page */
-
-    .event-background {
-        background-image: url(images/exhibition-1863344_1920.jpg);
-        background-color: black;
-        height: 35vh;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .slogan-event {
-        color: white;
-        margin: auto 0px;
-    }
-
-    .slogan-event h1 {
-        font-size: 1.25rem;
-    }
-
-    .slogan-event p {
-        font-size: .9rem;
-    }
-
-    /* Universal for event page */
-
-    .first-block, .second-block, .third-block {
-        padding: 20px 0px;
-    }
-
-    .first-wrapper, .second-wrapper, .third-wrapper{
-        width: 80%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .professor-wrapper h2, .energetica-wrapper h2, .night-wrapper h2 {
-        font-size: 1.125rem;
-    }
-
-    .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
-        padding-right: 20px;
-        font-size: 1.125rem;
-    }
-
-    .sheila, .night {
-        margin-left: 10px;
-    }
-
-    /* Beginning of 1st section */
-
-    .first-block {
-        background-color: #FFBF00;
-    }
-    
-    .sheila {
-        border-radius: 50%;
-        height: 200px;
-        width: 200px;
-    }
-
-    /* End of 1st section */
-    /* Beginning of 2nd section */
-
-    .energetica {
-        margin-left: 10px;
-    }
-    
-    .energetica {
-        border-radius: 10px;
-        width: 33vh;
-        margin-right: 30px;
-    }
-
-    .energetica-wrapper {
-        text-align: right;
-        padding-left: 20px;
-    }
-
-    /*End of 2nd section */
-    /* Beginning of 3rd section */
-
-    .third-block {
-        background-color: #038DF1;
-    }
-
-    .night {
-        border-radius: 10px;
-        width: 35vh;
-    }
-
-    /* Visit page */
-
-    img.crowd-people {
-        display: block;
-    }
-
-    .visit-content {
-        width: 70%;
-        margin: auto;
-    }
-
-    .purplebanner-title {
-        background-color: #6B00FC;
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: space-around;
-        color: white;
-    }
-
-    .purplebanner-title h1, .getinvolved-title h1 {
-        text-align: center;
-        margin: auto;
-        font-size: 1.25rem;
-    }
-
-    .getinvolved-wrapper {
-        width: 90%;
-        margin: auto;
-    }
-
-    .location-wrapper, .admission-text, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .support-text  {
-        margin-bottom: 30px;
-    }
-
-    .location-wrapper, .support-wrapper, .interships-wrapper {
-        margin-top: 20px;
-
-    }
-
-    .admission-text {
-        padding-top: 10px;
-    }
-
-    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper  {
-        border: 2px solid #6B00FC;
-        border-radius: 16px;
-        width: auto;
-        padding: 15px;
-    }
-
-    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .support-text  {
-        margin-bottom: 30px;
-    }
-
-    .location-wrapper, .support-wrapper, .interships-wrapper {
-        margin-top: 20px;
-
-    }
-
-    .visit-wrapper {
-        height: 680px;
-        margin-top: 20px
-    }
-
-    .first-three {
-        float: left;
-        width: 45%;
-    }
-
-    .second-three {
-        float: right;
-        width: 45%;
-        margin-top: 20px;
-    }
-
-    .admission-text {
-        padding-top: 10px;
-    }
-
-    /* Get involved page */
-    
-    img.GetInvolved {
-        background-image: url('images/william-bout-264826.jpg');
-        display: block;
-        object-fit: cover;
-    }
-
-    .getinvolved-wrapper {
-        display: flex;
-        flex-direction: column;
-     }
- 
-     .text-wrapper {
-         margin: 20px;
-     }
- 
-     .support-text, .volunteer-text {
-         margin-top: 10px;
-     }
- 
-     .form-wrapper {
-         display: flex;
-         justify-content: space-around;
-         margin: auto;
-         background-color: #6B00FC;
-         color: white;
-         border-radius: 10px;
-         width: 250px;
-         height: 300px;
-         margin: auto;
-         margin-bottom: 20px;
-       }
- 
-       .form-wrapper h3 {
-         font-size: 1rem;
-         padding-top: 10px;
-         text-align: center;
-         margin-bottom: 20px;
-       }
- 
-       label {
-         text-align: left;
-         font-size: 1rem;
-     
-       }
- 
-       input {
-         border-radius: 8px;
-         width: 140px;
-         height: 25px;
-         border: none;
-         margin-bottom: 20px;
-       }
- 
-       textarea  {
-         width: 140px;
-         height: 45px;
-       }
- 
-       label, input{
-         display: flex;
-         flex-direction: column;
-       }
- 
-       .form-submitbtn {
-         background-color: #FFBF00;
-         width: 130px;
-         height: 30px;
-         border-radius: 20px;
-         text-align: center;
-         margin: auto;
-         cursor: pointer;
-         font-weight: 600;
-         margin-top: 10px;
-         margin-right: 20px;
-       }
- 
-       .form-submitbtn a {
-         color: black;
-         font-size: 0.813rem;
-       }
- 
-     
-     .support-text, .volunteer-text {
-         margin-top: 10px;
-     }
- 
-    /* Footer */
-
-    .contact-wrapper {
-        margin: auto;
-        width: 60%;
-    }
-
-    .line {
-        width: 100%;
-        height: 20px;
-        background-color: #7711FF;
-    }
-
-    .footer-wrapper, .footer-wrapper1 {
-        background-color: #6B00FC;
-    }
-
-    .footer-wrapper1 {
-        margin-top: 0px;
-    }
-
-    .getinvolved-top {
-        width: 70%;
-        margin: auto;
-     }
-    
-     .getinvolved-img {
-        background-image: url('images/william-bout-264826.jpg');
-        height: 400px;
-    }
-
-    .getinvolved-wrapper {
-        display: flex;
-        justify-content: space-around;
-        width: 70%;
-        margin: auto;
-    }
-
-    .text-wrapper {
-        margin: 20px;
-    }
-
-    .support-text, .volunteer-text {
-        margin-top: 10px;
-    }
-
-    .form-wrapper {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #6B00FC;
-        color: white;
-        border-radius: 20px;
-        width: 360px;
-        height: 380px;
-        margin: auto;
-        margin-top: 40px;
-      }
-
-      .form-wrapper h3 {
-        font-size: 1.438rem;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      label {
-        text-align: left;
-        font-size: 1.063rem;
-    
-      }
-
-      input {
-        border-radius: 8px;
-        width: 240px;
-        height: 35px;
-        border: none;
-        margin-bottom: 20px;
-      }
-
-      textarea  {
-        width: 240px;
-        height: 75px;
-      }
-
-      label, input{
-        display: flex;
-        flex-direction: column;
-      }
-
-      .form-submitbtn {
-        background-color: #FFBF00;
-        width: 200px;
-        height: 40px;
-        border-radius: 20px;
-        text-align: center;
-        padding: 9px 0px;
-        margin: auto;
-        cursor: pointer;
-        font-weight: 600;
-        margin-top: 10px;
-      }
-
-      .form-submitbtn a {
-        color: black;
-      }
-
-
-    .footer-row{
-        width: 70%;
-        margin: auto;
-        color: white;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10px;
-        margin-bottom: 40px;
-    }
-
-    .footer-row p {
-        font-size: 0.813rem;
-        padding: 2px;
-    }
-
-    .footer-row h3 {
-        font-size: 1rem;
-    }
-
-
-    .csm {
-        text-align: center;
-        color: white;
-        font-size: 0.813rem;
-    }
+.csm {
+    font-size: 0.813rem;
+}
 
 }
 
 @media only screen and (min-width: 64em) {
 
-    body {
-        padding-top: 70px;
-    }
+body {
+    padding-top: 70px;
+}
 
-    .logo {
-        width: 110px;
-        float: left;
-        
-    }
-
-    #hamburger, #menu {
-        display: none;
-    }
-
-    ul {
-        float: right;
-    }
-
-    li {
-        display: inline-block;
-        padding: 10px;
-        font-size: 1.188rem;
-        font-weight: 500;
-    }
-
-    #main-header {
-        background-color: #6B00FC;
-        margin: auto;
-        width: 100%;
-        height: 70px;
-        position: fixed;
-        display: flex;
-        align-items: center;
-        z-index: 999;
-        top: 0;
-    }
-
-    .nav-bar {
-        width: 80%;
-        margin: auto;
-    }
-
-
-    .hero-img {
-        width: 80%;
-        background-image: url('/images/ruoyu-li-3U9SZGA7nws-unsplash.jpg');
-        background-color: black;
-        object-fit: cover;
-        height: 55vh;
-        display: flex;
-        margin: auto;
-    }
-
-
-    .content-wrapper {
-        width: 60%;
-        margin: auto;
-    }
-
-    .front-text1 {
-        color: black;
-        font-weight: 600;
-        font-size: 1.875rem;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .exciting, .observing {
-        color:#6B00FC;
-    }
+.logo {
+    width: 110px;
+    float: left;
     
+}
 
-    .first-section {
-        display: flex;
-        justify-content: space-around;
-        margin: 40px 0px;
-        align-items: center;
+#hamburger, #menu {
+    display: none;
+}
+
+#main-header {
+    height: 70px;
+}
+
+.nav-bar {
+    width: 80%;
+}
+
+
+.hero-img {
+    width: 80%;
+}
+
+
+.content-wrapper {
+    width: 60%;
+}
+
+.front-text1 {
+    font-size: 1.875rem;
+}
+
+.purple-background {
+    width: 80%;
+    height: 220px;
+}
+
+.text-area2 {
+    text-align: right;
+}
+
+.science-title h1 {
+    font-size: 2.175rem;
+}
+
+.explore-btn {
+    width: 200px;
+    height: 40px;
+
+}
+
+/* Exhibition page */
+
+.exhibition-wrapper {
+    width: 80%;
+}
+
+.cosmology, .evolution, .biologyandmedicine, .ecology {
+    flex-direction: row;
+}
+
+.cosmology1, .evolution1, .biologyandmedicine1, .ecology1 {
+    margin-bottom: auto;
+}
+
+.cosmology1 {
+    width: 398px;
+    height: 238px;
+}
+
+.evolution1 {
+    width: 400px;
+    height: 270px;
+}
+
+.biologyandmedicine1 {
+    width: 400px;
+    height: 270px;
+}
+
+.ecology1 {
+    width: 400px;
+    height: 320px;
+}
+
+.cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
+    font-size: 1.125rem;
+    padding-right: 30px;
+    margin-bottom: auto;
+}
+
+.cosmology-text h1, .evolution-text h1, .biologyandmedicine-text h1, .ecology-text h1 {
+    font-size: 1.875rem;
+}
+
+/* Event page */
+
+.event-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.first-block, .second-block, .second-wrapper, .third-block {
+    width: 80%;
+    margin: auto;
+}
+
+.first-wrapper, .second-wrapper, .third-wrapper {
+    width: 70%;
+    flex-direction: row;
+}
+
+.professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
+    font-size: 1.125rem;
+    padding-right: 20px;
+}
+/* Beginning of 1st section */
+
+.sheila {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+/* Beginning of 2nd section */
+
+.energetica {
+    width: 43vh;
+}
+
+.energetica-wrapper {
+    padding-left: 20px;
+}
+
+/* Beginning of 3rd section */
+
+.night {
+    width: 43vh;
+}
+
+.event-background {
+    object-fit: cover;
+    height: 45vh;
+    margin: auto;
+}
+
+.slogan-event h1 {
+    font-size: 2.175rem;
+}
+/* Visit page */
+
+.crowd-banner {
+    background-color: #6B00FC;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.crowd-title {
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+img.crowd-people {
+    height: 400px;
+    object-position: top;
+    object-fit: cover;
+}
+
+.visit-info-wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+.section-divider {
+    display: flex;
+    justify-content: space-around;
+}
+
+.visit-page {
+    width: 80%;
+}
+
+.visit-info-wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+.visit-page p {
+    font-size: 1.125rem;
+}
+
+.visit-wrapper {
+    display: hidden;
+}
+
+.first-three {
+    float: left;
+    width: 45%;
+}
+
+.second-three {
+    float: right;
+    width: 45%;
+    margin-top: 20px;
+}
+
+    /* Get involved page */
+
+    .getinvolved-top {
+    width: 80%;
+    margin: auto;
     }
 
-    .man-microscope {
-        border-radius: 10%;
-        height: 280px;
-        width: 380px;
-        padding-left: 20px;
+    img.GetInvolved {
+    height: 400px;
+    object-fit: cover;
+}
+
+    .text-wrapper {
+    width: 80%;
+    margin: auto;
     }
 
-    .purple-background {
-        margin: auto;
-        width: 80%;
-        background-color: #6B00FC;
-        height: 220px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        align-items: center;
-        text-align: center;
-        color: white;
+    .form-wrapper {
+    width: 250px;
+    height: 300px;
     }
 
-    .purple-background p {
-        font-size: 1rem;
+    input {
+        border-radius: 8px;
+        width: 140px;
+        height: 25px;
+        border: none;
+        margin-bottom: 20px;
     }
 
-    .purple-background h2 {
-        font-size: 1.125rem;
+    textarea  {
+        width: 140px;
+        height: 45px;
     }
 
-
-    .second-section {
-        display: flex;
-        justify-content: space-around;
-        margin: 40px 0px;
-        align-items: center;
-    }
-
-    .genoa {
-        border-radius: 10%;
-        height: 280px;
-        width:  380px;
-        padding-right: 20px;
-    }
-
-    .text-area1 p, .text-area2 p {
-        font-size: 1.125rem;
-        padding-top: 10px;
-    }
-
-    .text-area2 {
-        text-align: right;
-    }
-
-    .science-title h1 {
-        font-size: 2.175rem;
-    }
-
-    .science-title, .explore-btn {
-        color: white;
-        margin: auto;
-    }
-    .explore-btn {
-        background-color: #FFBF00;
-        width: 200px;
-        height: 40px;
-        border-radius: 20px;
-        text-align: center;
-        padding: 9px 0px;
-        margin-top: 70px;
-        cursor: pointer;
-        font-weight: 600;
-
-    }
-
-    .explore-btn a {
-        font-family: 'Montserrat', sans-serif;
-        color: black;
-    }
-
-
-    .more-info-btn {
-        background-color: #FFBF00;
-        width: 200px;
-        height: 40px;
-        border-radius: 20px;
-        text-align: center;
-        padding: 9px 0px;
-        margin: auto;
-        cursor: pointer;
-        font-weight: 600;
-    }
-
-    .more-info-btn a {
-        color: black;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-
-
-    .teacher {
-        width: 80px;
-        height: 80px;
-    }
-
-    .kids-wrapper h2 {
-        margin-top: 16px;
-    }
-
-    .kids {
-        width: 110px;
-        height: 65px; 
-    }
-
-    .researcher {
-        width: 80px;
-        height: 80px;
-    }
-
-    /* Exhibition page */
-
-    .exhibition-wrapper {
-        width: 80%;
-        margin: auto;
-    }
-
-    .cosmology, .evolution, .biologyandmedicine, .ecology {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 20px 0px;
-    }
-
-    .cosmology1, .evolution1, .biologyandmedicine1, .ecology1 {
-        margin-bottom: auto;
-    }
-
-    .cosmology1 {
-        width: 398px;
-        height: 238px;
-    }
-
-    .evolution1 {
-        width: 400px;
-        height: 270px;
-    }
-
-    .biologyandmedicine1 {
-        width: 400px;
-        height: 270px;
-    }
-
-    .ecology1 {
-        width: 400px;
-        height: 320px;
-    }
-
-    .cosmology-text, .evolution-text, .biologyandmedicine-text, .ecology-text {
-        font-size: 1.125rem;
-        padding-right: 30px;
-        margin-bottom: auto;
-    }
-
-    .cosmology-text h2, .evolution-text h2, .biologyandmedicine-text h2, .ecology-text h2 {
-        font-size: 1.875rem;
-        background-color: #6B00FC;
-        color: white;
-    }
-
-    /* Universal for event page */
-
-    .event-wrapper {
-        width: 80%;
-        margin: auto;
-    }
-
-    .first-block, .second-block, .second-wrapper, .third-block {
-        padding: 20px 0px;
-        width: 80%;
-        margin: auto;
-    }
-
-    .first-wrapper, .second-wrapper, .third-wrapper {
-        width: 70%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .professor-wrapper p, .energetica-wrapper p, .night-wrapper p {
-        font-size: 1.125rem;
-        padding-right: 20px;
-    }
-
-    .sheila, .night {
-        margin-left: 10px;
-    }
-
-    /* Beginning of 1st section */
-
-    .first-block {
-        background-color: #FFBF00;
-    }
-    
-    .sheila {
-        border-radius: 50%;
-        height: 250px;
-        width: 250px;
-    }
-
-    /* End of 1st section */
-    /* Beginning of 2nd section */
-
-    .energetica {
-        margin-left: 10px;
-    }
-    
-    .energetica {
-        border-radius: 10px;
-        width: 43vh;
-        margin-right: 30px;
-    }
-
-    .energetica-wrapper {
-        padding-left: 20px;
-    }
-
-    /*End of 2nd section */
-    /* Beginning of 3rd section */
-
-    .third-block {
-        background-color: #038DF1;
-    }
-    .night {
-        border-radius: 10px;
-        width: 43vh;
-    }
-
-    .event-background {
-        background-image: url(images/exhibition-1863344_1920.jpg);
-        background-color: black;
-        object-fit: cover;
-        height: 45vh;
-        display: flex;
-        justify-content: space-around;
-        margin: auto;
-    }
-
-    .slogan-event {
-        color: white;
-        margin: auto 0px;
-    }
-
-    .slogan-event h1 {
-        font-size: 2.175rem;
-    }
-
-    .slogan-event p {
-        font-size: 1.25rem;
-    }
-
-    /* Visit page */
-
-    .crowd-banner {
-        background-color: #6B00FC;
-        height: 100px;
-        display: flex;
-        justify-content: space-around;
-        color: white;
-    }
-
-    .crowd-title {
-        margin: auto;
-        font-size: 1.25rem;
-    }
-
-    img.crowd-people {
-        height: 400px;
-        object-position: top;
-        object-fit: cover;
-        display: block;
-    }
-
-    .purplebanner-title {
-        background-color: #6B00FC;
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: space-around;
-        color: white;
-    }
-
-    .purplebanner-title h1, .getinvolved-title h1 {
-        text-align: center;
-        margin: auto;
-        font-size: 1.25rem;
-    }
-
-    .visit-info-wrapper {
-        width: 70%;
-        margin: auto;
-    }
-
-    .section-divider {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .visit-page {
-        width: 80%;
-        margin: auto;
-    }
-
-    .visit-info-wrapper {
-        width: 70%;
-        margin: auto;
-    }
-
-    .visit-page p {
-        font-size: 1.125rem;
-    }
-
-    .visit-page h3 {
-        font-size: 1.25rem;
-    }
-
-    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper  {
-        border: 2px solid #6B00FC;
-        border-radius: 16px;
-        width: auto;
-        padding: 15px;
-    }
-
-    .location-wrapper, .Admission-wrapper, .hours-wrapper, .accessibility-wrapper, .food-drink-wrapper, .shop-wrapper, .support-text  {
-        margin-bottom: 30px;
-    }
-
-    .location-wrapper, .support-wrapper, .interships-wrapper {
-        margin-top: 20px;
-
-    }
-
-    .visit-wrapper {
-        height: 680px;
-        margin-top: 20px
-    }
-
-    .first-three {
-        float: left;
-        width: 45%;
-    }
-
-    .second-three {
-        float: right;
-        width: 45%;
-        margin-top: 20px;
-    }
-
-    .admission-text {
-        padding-top: 10px;
-    }
-
-     /* Get involved page */
-
-     .getinvolved-top {
-        width: 80%;
-        margin: auto;
-     }
-    
-     img.GetInvolved {
-        background-image: url('images/william-bout-264826.jpg');
-        display: block;
-        height: 400px;
-        object-fit: cover;
-    }
-
-    .getinvolved-wrapper {
+    label, input{
         display: flex;
         flex-direction: column;
-     }
- 
-     .text-wrapper {
-        width: 80%;
-        margin: auto;
-     }
- 
-     .support-text, .volunteer-text {
-        margin-top: 10px;
-     }
- 
-     .form-wrapper {
-        display: flex;
-        justify-content: space-around;
-        margin: auto;
-        background-color: #6B00FC;
-        color: white;
-        border-radius: 10px;
-        width: 250px;
-        height: 300px;
-        margin: auto;
-        margin-bottom: 20px;
-       }
- 
-       .form-wrapper h3 {
-         font-size: 1rem;
-         padding-top: 10px;
-         text-align: center;
-         margin-bottom: 20px;
-       }
- 
-       label {
-         text-align: left;
-         font-size: 1rem;
-     
-       }
- 
-       input {
-         border-radius: 8px;
-         width: 140px;
-         height: 25px;
-         border: none;
-         margin-bottom: 20px;
-       }
- 
-       textarea  {
-         width: 140px;
-         height: 45px;
-       }
- 
-       label, input{
-         display: flex;
-         flex-direction: column;
-       }
- 
-       .form-submitbtn {
-         background-color: #FFBF00;
-         width: 130px;
-         height: 30px;
-         border-radius: 20px;
-         text-align: center;
-         margin: auto;
-         cursor: pointer;
-         font-weight: 600;
-         margin-top: 10px;
-         margin-right: 20px;
-       }
- 
-       .form-submitbtn a {
-         color: black;
-         font-size: 0.813rem;
-       }
- 
-     
-     .support-text, .volunteer-text {
-         margin-top: 10px;
-     }
-    /* Footer */
-
-    .contact-wrapper {
-        margin: auto;
-        width: 60%;
-    }
-
-    .line {
-        width: 100%;
-        height: 20px;
-        background-color: #7711FF;
-    }
-    
-    .footer-wrapper, .footer-wrapper1 {
-        background-color: #6B00FC;
-    }
-    
-    .footer-wrapper1 {
-        margin-top: 0px;
-    }
-    
-    
-    .footer-row{
-        width: 70%;
-        margin: auto;
-        color: white;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10px;
-        margin-bottom: 40px;
-    }
-
-    .footer-row p {
-        font-size: 1rem;
-        padding: 2px;
-    }
-
-    
-    .csm {
-        text-align: center;
-        color: white;
     }
 }
