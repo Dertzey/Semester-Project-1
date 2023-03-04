@@ -493,11 +493,11 @@ textarea {
   margin-bottom: 20px;
 }
 
-.label {
+.label-name {
   display: none;
 }
 
-label,
+.empty-box,
 input {
   display: flex;
   flex-direction: column;
