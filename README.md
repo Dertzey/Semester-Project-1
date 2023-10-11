@@ -8,9 +8,7 @@ An interactive science museum called Community Science Museum.
 
 Community Science Museum is an informative and exciting museum about science. The target audience is primary and middle school children (ages 7-15) and families with young children. 
 
-This project was created based on the first-semester curriculum, where we had to implement everything we knew about HTML and CSS.
-
-You can add some bullet points if you'd like to:
+This project was created based on the first-semester curriculum, where we had to implement everything we knew about HTML, CSS and Design.
 
 - Semantic HTML
 - DRY Principle
